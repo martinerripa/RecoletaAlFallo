@@ -37,7 +37,7 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -65,8 +65,8 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
-            position: relative;  /* 🔥 importante */
-            top: -4px;          /* 🔥 sube solo la imagen */
+            position: relative;
+            top: -4px;
             transition: transform 0.3s ease;
         }
 
@@ -146,7 +146,7 @@
         }
 
         .hero {
-            padding: 80px 0;
+            padding: 80px 0 40px 0;
             text-align: center;
             background: rgba(0, 0, 0, 0.3);
             margin-bottom: 60px;
@@ -164,14 +164,57 @@
             font-size: 20px;
             color: #ccc;
             max-width: 600px;
-            margin: 0 auto;
+            margin: 0 auto 40px auto;
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .filter-btn {
+            background: rgba(232, 228, 217, 0.1);
+            color: #e8e4d9;
+            border: 2px solid #e8e4d9;
+            padding: 14px 35px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: 'Bebas Neue', cursive;
+        }
+
+        .filter-btn:hover {
+            background: rgba(232, 228, 217, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(232, 228, 217, 0.3);
+        }
+
+        .filter-btn.active {
+            background: #e8e4d9;
+            color: #4a1620;
+            border-color: #e8e4d9;
+        }
+
+        .filter-btn.active:hover {
+            background: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(232, 228, 217, 0.5);
         }
 
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 50px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 35px;
             padding: 40px 0;
+            max-width: 1600px;
+            margin: 0 auto;
         }
 
         .product-card {
@@ -180,6 +223,15 @@
             overflow: hidden;
             box-shadow: 0 10px 40px rgba(0,0,0,0.5);
             transition: transform 0.4s, box-shadow 0.4s;
+            max-width: 380px;
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card.hidden {
+            display: none;
         }
 
         .product-card:hover {
@@ -189,20 +241,20 @@
 
         .product-image {
             width: 100%;
-            height: 450px;
+            height: 380px;
             background: #ffffff;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 15px;
             border-bottom: 4px solid #4a1620;
             position: relative;
             overflow: hidden;
         }
 
         .product-image img {
-            max-width: 90%;
-            max-height: 90%;
+            max-width: 95%;
+            max-height: 95%;
             object-fit: contain;
             position: relative;
             z-index: 1;
@@ -210,68 +262,73 @@
         }
 
         .product-card:hover .product-image img {
-            transform: scale(1.05) translateY(-3px);
+            transform: scale(1.08) translateY(-3px);
         }
 
         .product-info {
-            padding: 30px;
+            padding: 28px 22px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
         }
 
         .product-name {
             font-family: 'Bebas Neue', cursive;
-            font-size: 32px;
+            font-size: 28px;
             font-weight: bold;
             color: #e8e4d9;
-            margin-bottom: 15px;
+            margin-bottom: 14px;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
         }
 
         .product-specs {
             color: #aaa;
-            font-size: 14px;
-            margin-bottom: 15px;
-            line-height: 1.8;
+            font-size: 13px;
+            margin-bottom: 14px;
+            line-height: 1.7;
         }
 
         .product-description {
             color: #ccc;
-            margin-bottom: 25px;
-            line-height: 1.8;
-            font-size: 15px;
+            margin-bottom: 22px;
+            line-height: 1.7;
+            font-size: 14px;
+            flex-grow: 1;
         }
 
         .product-price {
             font-family: 'Bebas Neue', cursive;
-            font-size: 42px;
+            font-size: 38px;
             font-weight: bold;
             color: #e8e4d9;
-            margin-bottom: 25px;
+            margin-bottom: 22px;
             letter-spacing: 2px;
+            margin-top: auto;
         }
 
         .flavor-selector {
-            margin: 20px 0;
+            margin: 18px 0;
         }
 
         .flavor-selector label {
             display: block;
             color: #e8e4d9;
             font-weight: 600;
-            margin-bottom: 12px;
-            font-size: 17px;
+            margin-bottom: 10px;
+            font-size: 15px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         .flavor-selector select {
             width: 100%;
-            padding: 15px 20px;
-            border-radius: 10px;
+            padding: 13px 16px;
+            border-radius: 8px;
             border: 2px solid #e8e4d9;
             background: rgba(74, 22, 32, 0.3);
             color: #e8e4d9;
-            font-size: 16px;
+            font-size: 14px;
             cursor: pointer;
             font-family: 'Oswald', sans-serif;
             font-weight: 500;
@@ -279,9 +336,9 @@
             appearance: none;
             background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e8e4d9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
             background-repeat: no-repeat;
-            background-position: right 15px center;
-            background-size: 20px;
-            padding-right: 45px;
+            background-position: right 12px center;
+            background-size: 18px;
+            padding-right: 40px;
         }
 
         .flavor-selector select:hover {
@@ -309,15 +366,15 @@
             width: 100%;
             background: linear-gradient(135deg, #4a1620 0%, #6d1f2a 100%);
             color: #e8e4d9;
-            padding: 18px;
+            padding: 15px;
             border: none;
-            border-radius: 12px;
-            font-size: 20px;
+            border-radius: 10px;
+            font-size: 19px;
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
             font-family: 'Bebas Neue', cursive;
         }
 
@@ -561,6 +618,17 @@
             font-size: 14px;
         }
 
+        @media (max-width: 1024px) {
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+            
+            .product-image {
+                height: 300px;
+            }
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 24px;
@@ -571,7 +639,60 @@
             }
 
             .products-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .product-card {
+                border-radius: 12px;
+            }
+
+            .product-image {
+                height: 200px;
+                padding: 10px;
+            }
+
+            .product-info {
+                padding: 15px 12px;
+            }
+
+            .product-name {
+                font-size: 18px;
+                margin-bottom: 8px;
+            }
+
+            .product-specs {
+                font-size: 11px;
+                margin-bottom: 8px;
+            }
+
+            .product-description {
+                font-size: 12px;
+                margin-bottom: 12px;
+            }
+
+            .product-price {
+                font-size: 24px;
+                margin-bottom: 12px;
+            }
+
+            .flavor-selector {
+                margin: 10px 0;
+            }
+
+            .flavor-selector label {
+                font-size: 13px;
+                margin-bottom: 8px;
+            }
+
+            .flavor-selector select {
+                font-size: 12px;
+                padding: 10px 12px;
+            }
+
+            .add-to-cart {
+                font-size: 14px;
+                padding: 10px;
             }
 
             nav {
@@ -631,25 +752,29 @@
                 <div class="container">
                     <h2>Potenciá tu rendimiento</h2>
                     <p>Los mejores suplementos para alcanzar tus objetivos fitness</p>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" onclick="filterProducts('all')">Ver Todos</button>
+                        <button class="filter-btn" onclick="filterProducts('combos')">Combos</button>
+                    </div>
                 </div>
             </div>
 
             <div class="container">
                 <div class="products-grid">
-                    <div class="product-card">
+                    <div class="product-card" data-category="individual">
                         <div class="product-image">
                             <img src="img/proteina.jpg" alt="Whey Protein">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">Whey Protein</h3>
-                            <p class="product-specs">🏋️ 2Lb - 30 Servicios | 25g Proteína por porción</p>
+                            <p class="product-specs">🏋️ 908g - 30 Servicios | 25g Proteína por porción</p>
                             <p class="product-description">Proteína de suero micro-filtrada, ideal para construir masa muscular y acelerar la recuperación después del entrenamiento.</p>
                             
                             <div class="flavor-selector">
                                 <label>Elegí tu sabor:</label>
                                 <select id="flavorSelect">
                                     <option value="">Seleccioná un sabor</option>
-                                    <option value="Vainilla">🍦 Vainilla</option>
+                                    <option value="Vainilla">🦴 Vainilla</option>
                                     <option value="Chocolate">🍫 Chocolate</option>
                                     <option value="Cookies and Cream">🍪 Cookies and Cream</option>
                                     <option value="Frutilla" disabled>🍓 Frutilla (Sin stock)</option>
@@ -657,12 +782,12 @@
                                 </select>
                             </div>
                             
-                            <div class="product-price">ARS $37.900</div>
+                            <div class="product-price">ARS $38.900</div>
                             <button class="add-to-cart" onclick="addProteinToCart()">Agregar al Carrito</button>
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-card" data-category="individual">
                         <div class="product-image">
                             <img src="img/creatina.jpg" alt="Creatina">
                         </div>
@@ -670,8 +795,47 @@
                             <h3 class="product-name">Creatina Monohidrato</h3>
                             <p class="product-specs">⚡ 300g - 60 Servicios | 5g por porción</p>
                             <p class="product-description">Creatina 100% pura ultramicronizada. Aumentá tu fuerza, potencia y rendimiento en entrenamientos de alta intensidad. Libre de gluten.</p>
-                            <div class="product-price">ARS $21.900</div>
-                            <button class="add-to-cart" onclick="addToCart('Creatina Monohidrato 300g', 21900)">Agregar al Carrito</button>
+                            <div class="product-price">ARS $24.900</div>
+                            <button class="add-to-cart" onclick="addToCart('Creatina Monohidrato 300g', 24900)">Agregar al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="combo">
+                        <div class="product-image">
+                            <img src="img/combo1.jpg" alt="Combo Proteína + Creatina">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Combo: Proteína + Creatina</h3>
+                            <p class="product-specs">💪 Whey Protein 908g + Creatina 300g</p>
+                            <p class="product-description">El combo perfecto para maximizar tu rendimiento. Proteína para recuperación y crecimiento + Creatina para fuerza y potencia. ¡Ahorrá comprando el combo!</p>
+                            
+                            <div class="flavor-selector">
+                                <label>Elegí el sabor de tu proteína:</label>
+                                <select id="comboFlavorSelect">
+                                    <option value="">Seleccioná un sabor</option>
+                                    <option value="Vainilla">🦴 Vainilla</option>
+                                    <option value="Chocolate">🍫 Chocolate</option>
+                                    <option value="Cookies and Cream">🍪 Cookies and Cream</option>
+                                    <option value="Frutilla" disabled>🍓 Frutilla (Sin stock)</option>
+                                    <option value="Banana" disabled>🍌 Banana (Sin stock)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="product-price">ARS $61.500</div>
+                            <button class="add-to-cart" onclick="addCombo1ToCart()">Agregar al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="combo">
+                        <div class="product-image">
+                            <img src="img/combo2.jpg" alt="Combo 3x Creatina">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Combo: 3x Creatina</h3>
+                            <p class="product-specs">⚡⚡⚡ 3x Creatina Monohidrato 300g (900g total)</p>
+                            <p class="product-description">Pack de 3 creatinas para no quedarte sin stock. 180 servicios totales para 6 meses de suplementación continua. ¡El mejor precio por gramo!</p>
+                            <div class="product-price">ARS $73.200</div>
+                            <button class="add-to-cart" onclick="addToCart('Combo 3x Creatina Monohidrato (900g)', 73200)">Agregar al Carrito</button>
                         </div>
                     </div>
                 </div>
@@ -786,12 +950,36 @@
     <script>
         let cart = {};
         let currentSection = 'productos';
+        let currentFilter = 'all';
 
         function showSection(sectionId) {
             document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
             document.getElementById(sectionId).classList.add('active');
             currentSection = sectionId;
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function filterProducts(filter) {
+            currentFilter = filter;
+            const products = document.querySelectorAll('.product-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Actualizar botones activos
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filtrar productos con animación
+            products.forEach(product => {
+                if (filter === 'all') {
+                    product.classList.remove('hidden');
+                } else if (filter === 'combos') {
+                    if (product.getAttribute('data-category') === 'combo') {
+                        product.classList.remove('hidden');
+                    } else {
+                        product.classList.add('hidden');
+                    }
+                }
+            });
         }
 
         function addProteinToCart() {
@@ -804,7 +992,28 @@
             }
             
             const name = `Whey Protein 908g - ${flavor}`;
-            const price = 37900;
+            const price = 38900;
+            
+            if (cart[name]) {
+                cart[name].quantity++;
+            } else {
+                cart[name] = { price: price, quantity: 1 };
+            }
+            updateCart();
+            showNotification(`${name} agregado al carrito ✓`);
+        }
+
+        function addCombo1ToCart() {
+            const comboFlavorSelect = document.getElementById('comboFlavorSelect');
+            const flavor = comboFlavorSelect.value;
+            
+            if (!flavor) {
+                alert('Por favor, seleccioná un sabor de proteína antes de agregar al carrito');
+                return;
+            }
+            
+            const name = `Combo: Proteína ${flavor} + Creatina`;
+            const price = 61500;
             
             if (cart[name]) {
                 cart[name].quantity++;
@@ -951,6 +1160,6 @@
         updateCart();
     </script>
 </body>
-
 </html>
+
 
