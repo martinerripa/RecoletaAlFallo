@@ -51,7 +51,7 @@ const products = [
     {
         categoria: "Preentreno",
         nombre: "PUMP V8 - 285 Gr",
-        precio: 22500,
+        precio: 25000,
         sabores: ["Sandía 🍉", "Limón 🍋"],
         sinStockPorSabor: {
             "Sandía 🍉": [],
@@ -657,4 +657,5 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
