@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona Envíos Gratis - Recoleta al Fallo</title>
+    <link rel="icon" type="image/jpeg" href="img/logo.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f8f6f0;
+            color: #2c2c2c;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #4a1620 0%, #6d1f2a 100%);
+            padding: 20px 0;
+            box-shadow: 0 4px 20px rgba(74, 22, 32, 0.3);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            background: white;
+            border-radius: 8px;
+            padding: 2px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: white;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .back-btn {
+            background: white;
+            color: #4a1620;
+            padding: 6px 10px;  /* ← más chico (era 10px 25px) */
+            border: none;
+            border-radius: 8px;
+            font-size: 10px;  /* ← más chico (era 14px) */
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        /* CONTENIDO PRINCIPAL */
+        .envios-content {
+            max-width: 1000px;
+            margin: 30px auto;  /* ← era 60px */
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .envios-title {
+            font-size: 36px;  /* ← era 48px */
+            font-weight: 700;
+            color: #4a1620;
+            margin-bottom: 15px;  /* ← era 20px */
+            animation: fadeInDown 0.6s ease-out;
+        }
+
+        .envios-subtitle {
+            font-size: 18px;  /* ← era 20px */
+            color: #666;
+            margin-bottom: 30px;  /* ← era 50px */
+            animation: fadeInUp 0.6s ease-out 0.2s both;
+        }
+
+        .map-container {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            animation: fadeInUp 0.6s ease-out 0.4s both;
+            max-width: 700px;  /* ← NUEVO: limita el ancho */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .map-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .map-button {
+            background: #4a1620;
+            color: white;
+            padding: 18px 50px;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(74, 22, 32, 0.3);
+            animation: fadeInUp 0.6s ease-out 0.6s both;
+        }
+
+        .map-button:hover {
+            background: #6d1f2a;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(74, 22, 32, 0.4);
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #4a1620 0%, #6d1f2a 100%);
+            color: white;
+            padding: 25px;  /* ← era 30px */
+            border-radius: 12px;
+            margin-top: 30px;  /* ← era 50px */
+            animation: fadeInUp 0.6s ease-out 0.8s both;
+            max-width: 700px;  /* ← NUEVO: mismo ancho que la imagen */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .info-box h3 {
+            font-size: 20px;  /* ← era 24px */
+            margin-bottom: 12px;  /* ← era 15px */
+        }
+
+        .info-box p {
+            font-size: 14px;  /* ← era 16px */
+            line-height: 1.6;  /* ← era 1.8 */
+            opacity: 0.95;
+        }
+
+        /* ANIMACIONES */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .envios-title {
+                font-size: 32px;
+            }
+
+            .envios-subtitle {
+                font-size: 16px;
+            }
+
+            .map-container {
+                padding: 20px;
+            }
+
+            .map-button {
+                padding: 15px 35px;
+                font-size: 16px;
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+
+        /* RESPONSIVE MÓVIL */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 0;
+            }
+            
+            .logo img {
+                width: 50px;
+                height: 50px;
+            }
+            
+            h1 {
+                font-size: 18px;
+            }
+            
+            .back-btn {
+                padding: 8px 15px;
+                font-size: 12px;
+            }
+            
+            .envios-content {
+                margin: 20px auto;
+                padding: 0 15px;
+            }
+            
+            .envios-title {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            
+            .envios-subtitle {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+            
+            .map-container {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+            
+            .map-button {
+                padding: 12px 25px;
+                font-size: 13px;
+                width: 100%;
+                margin-top: 20px;
+            }
+            
+            .info-box {
+                padding: 20px;
+                margin-top: 20px;
+            }
+            
+            .info-box h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            
+            .info-box p {
+                font-size: 13px;
+                line-height: 1.5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <img src="img/logo.jpg" alt="Recoleta al Fallo">
+                    </div>
+                    <h1>Recoleta al Fallo</h1>
+                </div>
+                <a href="index.html" class="back-btn">← Volver a la tienda</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO -->
+    <div class="envios-content">
+        <h2 class="envios-title">🚚 Zona de Envíos Gratis</h2>
+        <p class="envios-subtitle">Realizamos envíos sin cargo en Recoleta y alrededores</p>
+
+        <div class="map-container">
+            <img src="img/zona_envios.jpg" alt="Mapa de zona de envíos" class="map-image">
+        </div>
+
+        <a href="https://www.google.com/maps/d/u/0/edit?mid=1Fdc5gZCirwZ32HXqmEt7OkRGF4Ie_Ig&usp=sharing" 
+            target="_blank" 
+            class="map-button">
+            📍 Ver Mapa Interactivo Completo
+        </a>
+
+        <div class="info-box">
+            <h3>¿Cómo funciona?</h3>
+            <p>
+                Si tu dirección se encuentra dentro de la zona marcada en el mapa, <strong>tu envío es totalmente gratis y en el día</strong>. 
+                Solo tenés que seleccionar tus productos y coordinar la entrega por WhatsApp. 
+                <br><br>
+                ¿Estás fuera de la zona? ¡No te preocupes! También hacemos envíos a todo el país.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
