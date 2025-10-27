@@ -114,7 +114,7 @@ const products = [
     },
     {
         categoria: "Magnesio",
-        nombre: "ENA - Citrato de magnesio",
+        nombre: "ENA - Citrato de Magnesio",
         precio: 14000,
         sinStock: [], 
         descripcionPrincipal: "El magnesio favorece al metabolismo energético normal y ayuda a disminuir el cansancio y la fatiga. Asimismo, participa en el correcto funcionamiento del sistema nervioso y muscular. También contribuye a la síntesis proteica y al mantenimiento de huesos en condiciones normales.",
@@ -149,7 +149,7 @@ const products = [
     {
         categoria: "ZMA",
         nombre: "STAR - ZMA - 90 Cápsulas",
-        precio: 15000,
+        precio: 16000,
         sinStock: [], 
         descripcionPrincipal: "REAL ZMA contiene la combinación adecuada de los tres elementos claves: Magnesio (como aspartato), Zinc (como monometionina y aspartato) y Vitamina B6. NATURAL | NON-HORMONAL FORMULA Tested for Purity and Potency",
         modoUso: "MUJERES: Tomar 2 cápsulas HOMBRES: Tomar 3 cápsulas. Antes de acostarse, preferentemente con el estómago vacío o como lo indique su especialista.",
@@ -165,7 +165,7 @@ const products = [
         sinStock: [], 
         descripcionPrincipal: "ZMA es un complemento nutricional formulado para aumentar la masa muscular con una potente mezcla de Zinc, Magnesio y Vitamina B6. El Zinc soporta la función celular, el Magnesio mejora la fuerza y resistencia y la Vitamina B6 ayuda a un mejor descanso. Adecuado para todos los niveles de actividad física desde levantamiento de pesas hasta deportes de resistencia.",
         modoUso: "Tomar 2 cápsulas de ZMA antes de acostarte para optimizar la recuperación y el crecimiento muscular.",
-        ingredientes: "Zinc, Magnesio, ZMA",
+        ingredientes: "Óxido de magnesio, gluconato de zinc, vitamina B6, INS 460i (EST), INS 470i (ANAH).  PUEDE CONTENER DERIVADOS DE LECHE Y SOJA.",
         advertencias: "No apto para menores, diabéticos, mujeres en periodo de embarazo o lactancia",
         descripcionSecundaria: "Zinc: Contribuye a la función celular, el sistema inmunológico y la salud muscular.  Magnesio: Ayuda a mejorar la fuerza y la resistencia muscular, facilita el metabolismo y promueve un sueño reparador.  Vitamina B6: Ayuda a mejorar la calidad del sueño y puede contribuir al aumento de la energía. Presentación: 60 cápsulas de 470 mg c/u.",
         imagen: "img/ZMAENA.webp"
@@ -657,5 +657,6 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
 
