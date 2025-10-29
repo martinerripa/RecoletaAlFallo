@@ -115,7 +115,7 @@ const products = [
     {
         categoria: "Magnesio",
         nombre: "ENA - Citrato de Magnesio",
-        precio: 14000,
+        precio: 13900,
         sinStock: [], 
         descripcionPrincipal: "El magnesio favorece al metabolismo energético normal y ayuda a disminuir el cansancio y la fatiga. Asimismo, participa en el correcto funcionamiento del sistema nervioso y muscular. También contribuye a la síntesis proteica y al mantenimiento de huesos en condiciones normales.",
         modoUso: "Se recomienda tomar de 1 a 4 cápsulas de Citrato de magnesio en cualquier momento del día o bien, 30 minutos antes o después de sus principales comidas.",
@@ -660,6 +660,7 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
 
 
