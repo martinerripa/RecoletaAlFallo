@@ -1187,6 +1187,131 @@ nav {
     }
 }
 
+/* ==== MODALES MÁS CHICOS EN CELULAR ==== */
+@media (max-width: 768px) {
+
+    /* Contenedor del modal */
+    .product-modal .modal-content,
+    .cart-modal .cart-content,
+    .location-alert-content {
+        width: 90% !important;
+        max-width: 350px !important;
+        padding: 20px !important;
+        border-radius: 14px !important;
+    }
+
+    /* Imagen del producto más chica */
+    .product-modal .modal-image {
+        height: 250px !important;
+        padding: 15px !important;
+    }
+
+    /* Título y texto más chicos */
+    .modal-details h2,
+    .cart-header h2,
+    .location-alert-content h3 {
+        font-size: 18px !important;
+    }
+
+    .modal-details p,
+    .location-alert-content p {
+        font-size: 14px !important;
+        line-height: 1.4;
+    }
+
+    /* Botones más compactos */
+    .btn-add-cart,
+    .btn-buy-now,
+    .checkout-btn,
+    .location-alert-btn {
+        padding: 10px 15px !important;
+        font-size: 13px !important;
+        border-radius: 8px !important;
+    }
+}
+
+
+/* ==== CORRECCIÓN FINAL MODAL PRODUCTO EN CELULAR ==== */
+@media (max-width: 768px) {
+
+    /* Fuerza alineación del contenido */
+    .product-modal .modal-body {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        padding: 10px 15px !important;
+        gap: 12px !important;
+    }
+
+    /* Ajusta el contenedor del modal */
+    .product-modal .modal-content {
+        margin: 30px auto !important;
+        width: 90% !important;
+        max-width: 380px !important;
+        border-radius: 14px !important;
+        padding-bottom: 15px !important;
+    }
+
+    /* Imagen centrada y más chica */
+    .product-modal .modal-image {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        height: auto !important;
+        padding: 10px 0 !important;
+    }
+
+    .product-modal .modal-image img {
+        width: 70% !important;
+        height: auto !important;
+        max-width: 220px !important;
+    }
+
+    /* Detalles más compactos */
+    .product-modal .modal-details {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .product-modal .modal-details h2 {
+        font-size: 18px !important;
+        margin-bottom: 6px !important;
+    }
+
+    .product-modal .modal-price {
+        font-size: 22px !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* Botones centrados y del mismo tamaño */
+    .product-modal .action-buttons {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 10px !important;
+        width: 100% !important;
+    }
+
+    .product-modal .action-buttons button {
+        width: 90% !important;
+        padding: 10px 0 !important;
+        font-size: 13px !important;
+    }
+
+    /* Secciones colapsables más suaves */
+    .product-modal .collapsible-section {
+        width: 100% !important;
+        text-align: left !important;
+        margin-top: 15px !important;
+    }
+}
+
+
+
+
 
 
 
