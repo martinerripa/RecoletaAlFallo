@@ -194,9 +194,12 @@ function tieneStock(ubicaciones) {
     const mismoStock = ['Recoleta y alrededores', 'Resto del país'];
     
     if (ubicaciones.some(u => mismoStock.includes(u))) {
-        return !mismoStock.includes(selectedLocation);
+        if (mismoStock.includes(selectedLocation)) {
+            return false; // Sin stock para Recoleta/Resto del país
+        }
     }
     
+    // Para Olavarría u otras ubicaciones, verificar directamente
     return !ubicaciones.includes(selectedLocation);
 }
 
@@ -657,6 +660,7 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
 
 
