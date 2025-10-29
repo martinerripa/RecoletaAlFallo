@@ -50,6 +50,11 @@ header {
     padding: 2px;
 }
 
+.location-selector,
+.cart-btn {
+  margin-top: 22px; /* probá entre 20 y 25 hasta que se vea igualado */
+}
+
 
 h1 {
     font-size: 24px;
@@ -1157,4 +1162,5 @@ nav {
 .instagram-float span {
     color: white;
 }
+
 
