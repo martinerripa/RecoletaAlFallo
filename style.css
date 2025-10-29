@@ -1164,3 +1164,28 @@ nav {
 }
 
 
+/*media para achiar los botones de ww e insta*/
+@media (max-width: 768px) {
+    /* Hace más chicos los botones flotantes */
+    .whatsapp-float,
+    .instagram-float {
+        width: 55px;   /* 👈 Ajustá el tamaño que te guste */
+        height: 57px;
+    }
+
+    /* Hace que el SVG se ajuste bien al nuevo tamaño */
+    .whatsapp-float svg,
+    .instagram-float svg {
+        width: 60%;
+        height: 60%;
+    }
+
+    /* Reduce el texto “Seguinos!” */
+    .instagram-float span {
+        font-size: 5px;
+        margin-top: 6px;
+    }
+}
+
+
+
