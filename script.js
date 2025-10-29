@@ -51,11 +51,11 @@ const products = [
     {
         categoria: "Preentreno",
         nombre: "PUMP V8 - 285 Gr",
-        precio: 25000,
-        sabores: ["Sandía 🍉", "Limón 🍋"],
+        precio: 26340,
+        sabores: ["Sandía 🍉", "Uva 🍇"],
         sinStockPorSabor: {
-            "Sandía 🍉": [],
-            "Limón 🍋": [],},  
+            "Sandía 🍉": ['Recoleta y alrededores','Olavarría'],
+            "Uva 🍇": ['Recoleta y alrededores','Olavarría'],},  
         descripcionPrincipal: "Pre-entrenamiento de última generación con 8 ingredientes activos diseñados para maximizar tu rendimiento.\n\nFórmula avanzada con beta alanina, citrulina, cafeína y complejo vitamínico para energía explosiva y mejor concentración.",
         modoUso: "Disolver 1 medida (9,5g) en 500cm3 de agua fría. Consumir 15 a 30 minutos antes del entrenamiento o la competencia. No consumir más de 2 porciones diarias.",
         ingredientes: "Betaina Anhidra, Beta Alanina, Arginina Alfaketoglutarato, L-Citrulina Malato, Extracto de Guaraná, Taurina, L-Tirosina, Cafeína Anhidra, Vitamina C, Vitamina B6, Vitamina B12.",
@@ -66,7 +66,7 @@ const products = [
     {
         categoria: "Vitaminas",
         nombre: "All in One Multivitamin - 60 Cápsulas",
-        precio: 17000,
+        precio: 17420,
         sabores: [],
         sinStock: [], 
         descripcionPrincipal: "Complejo multivitamínico completo con 23 vitaminas y minerales esenciales para apoyar tu salud general y rendimiento deportivo.\n\nFórmula balanceada que cubre todas tus necesidades nutricionales diarias.",
@@ -79,7 +79,7 @@ const products = [
     {
         categoria: "Omega3",
         nombre: "Omega 3 Fish Oil - 60 Cápsulas",
-        precio: 27000,
+        precio: 27900,
         sinStock: [], 
         modoUso: "Consumir 2 cápsulas al día.",
         ingredientes: "Suplemento Dietario a Base de Aceite Natural de Pescado",
@@ -104,7 +104,7 @@ const products = [
     {
         categoria: "Quemador",
         nombre: "Thermo Fuel Max - 120 Cápsulas",
-        precio: 17000,
+        precio: 18900,
         sinStock: [], 
         modoUso: "Tomar 2 cápsulas por la mañana y 2 cápsulas 15 minutos antes del entrenamiento o como lo indique su médico.",
         ingredientes: "Extracto Natural de Canephora Robusta (Green Coffee), Ext. Nat. de Papa (Solanum Tuberosum), Ext. Nat. de Naranja Amarga, Ext. Nat. de Té Verde, Ext. Natural de Guaraná, Ext. Natural de Uva Ursi, Vitamina B6, Riboflavina (Vitamina B2), Tiamina (Vitamina B1), Picolinato de Cromo y Vitamina B12. Información adicional: Fenilcetonúricos, contiene fenilalanina.",
@@ -161,7 +161,7 @@ const products = [
     {
         categoria: "ZMA",
         nombre: "ENA - ZMA - 60 Cápsulas",
-        precio: 12200,
+        precio: 12900,
         sinStock: [], 
         descripcionPrincipal: "ZMA es un complemento nutricional formulado para aumentar la masa muscular con una potente mezcla de Zinc, Magnesio y Vitamina B6. El Zinc soporta la función celular, el Magnesio mejora la fuerza y resistencia y la Vitamina B6 ayuda a un mejor descanso. Adecuado para todos los niveles de actividad física desde levantamiento de pesas hasta deportes de resistencia.",
         modoUso: "Tomar 2 cápsulas de ZMA antes de acostarte para optimizar la recuperación y el crecimiento muscular.",
@@ -657,6 +657,7 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
 
 
