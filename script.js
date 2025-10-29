@@ -55,7 +55,7 @@ const products = [
         sabores: ["Sandía 🍉", "Uva 🍇"],
         sinStockPorSabor: {
             "Sandía 🍉": ['Recoleta y alrededores','Olavarría'],
-            "Uva 🍇": ['Recoleta y alrededores','Olavarría'],},  
+            "Uva 🍇": ['Recoleta y alrededores','Olavarría']},  
         descripcionPrincipal: "Pre-entrenamiento de última generación con 8 ingredientes activos diseñados para maximizar tu rendimiento.\n\nFórmula avanzada con beta alanina, citrulina, cafeína y complejo vitamínico para energía explosiva y mejor concentración.",
         modoUso: "Disolver 1 medida (9,5g) en 500cm3 de agua fría. Consumir 15 a 30 minutos antes del entrenamiento o la competencia. No consumir más de 2 porciones diarias.",
         ingredientes: "Betaina Anhidra, Beta Alanina, Arginina Alfaketoglutarato, L-Citrulina Malato, Extracto de Guaraná, Taurina, L-Tirosina, Cafeína Anhidra, Vitamina C, Vitamina B6, Vitamina B12.",
@@ -657,6 +657,7 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
 
 
