@@ -42,10 +42,9 @@ header {
 }
 
 .logo img {
-    width: 70px; /*LOGO MAS GRANDE*/
-    height: 70px;
+    width: 90px; /*LOGO MAS GRANDE*/
+    height: 90px;
     object-fit: contain;
-    background: white;
     border-radius: 8px;
     padding: 2px;
 }
@@ -1357,6 +1356,7 @@ nav {
         margin-top: 15px !important;
     }
 }
+
 
 
 
