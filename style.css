@@ -1068,8 +1068,8 @@ nav {
     
     /* Logo y título más chicos */
     .logo img {
-        width: 45px;  /* ← más chico (era 50px) */
-        height: 45px;
+        width: 70px;  /* ← más chico (era 50px) */
+        height: 70px;
     }
     
     h1 {
@@ -1356,6 +1356,7 @@ nav {
         margin-top: 15px !important;
     }
 }
+
 
 
 
