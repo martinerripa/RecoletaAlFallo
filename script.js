@@ -33,7 +33,7 @@ const products = [
         ingredientes: "Creatina monohidrato micronizada de máxima pureza - 100% Pura.",
         advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo o lactancia. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en lugar seco y fresco.",
         descripcionSecundaria: "CREATINE MONOHYDRATE ULTRAMICRONIZED | 100% PURA | AUMENTA EL VOLUMEN Y LA RESISTENCIA Suplemento dietario a base de Creatina Monohidrato. 1kG | 200 SERV.",
-        imagen: "img/creatin1kg.webp"
+        imagen: "img/creatina1kg.png"
     },
     
     {
@@ -674,6 +674,7 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
 
 
