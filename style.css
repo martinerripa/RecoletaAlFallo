@@ -38,7 +38,7 @@ header {
 .logo-section {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 6px;
 }
 
 .logo img {
@@ -772,7 +772,7 @@ nav {
 @media (max-width: 768px) {
     .products-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        gap: 4px;
     }
     
     h1 {
@@ -1356,6 +1356,7 @@ nav {
         margin-top: 15px !important;
     }
 }
+
 
 
 
