@@ -21,6 +21,20 @@ const products = [
         descripcionSecundaria: "2 LIBRAS | 30 SERV. | 25GR DE PROTEÍNA X SERV.",
         imagen: "img/proteina.jpg"
     },
+
+    {
+        categoria: "Creatina",
+        nombre: "Creatina Monohidrato 1Kg",
+        precio: 82500,
+        sabores: [],
+        sinStock: [], 
+        descripcionPrincipal: "La creatina micronizada es la unión de tres aminoácidos que ofrece mayores ventajas que la creatina normal, mejorando su asimilación. La creatina monohidrato es recomendada durante un plan de entrenamiento para aumentar la fuerza, resistencia y recuperación.",
+        modoUso: "Durante los primeros 4 días, consumir 4 porciones diarias, y los días siguientes consumir una o dos porciones diarias preferentemente con el estómgo vacío.",
+        ingredientes: "Creatina monohidrato micronizada de máxima pureza - 100% Pura.",
+        advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo o lactancia. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en lugar seco y fresco.",
+        descripcionSecundaria: "CREATINE MONOHYDRATE ULTRAMICRONIZED | 100% PURA | AUMENTA EL VOLUMEN Y LA RESISTENCIA Suplemento dietario a base de Creatina Monohidrato. 1kG | 200 SERV.",
+        imagen: "img/creatin1kg.webp"
+    },
     
     {
         categoria: "Creatina",
@@ -660,6 +674,7 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
 
 
