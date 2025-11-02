@@ -676,10 +676,10 @@ nav {
 
 .continue-shopping-btn {
     flex: 1;
-    background: white;
-    color: #4a1620;
+    background:  #c6bdbc;
+    color: white;
     padding: 10px;  /* ← era 12px */
-    border: 2px solid #c6bdbc;
+    border: none;
     border-radius: 8px;
     font-size: 13px;  /* ← era 14px */
     font-weight: 600;
@@ -1356,6 +1356,7 @@ nav {
         margin-top: 15px !important;
     }
 }
+
 
 
 
