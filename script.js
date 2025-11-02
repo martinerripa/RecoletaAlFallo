@@ -26,8 +26,7 @@ const products = [
         categoria: "Creatina",
         nombre: "Creatina Monohidrato 1Kg",
         precio: 82500,
-        sabores: [],
-        sinStock: [], 
+        sinStock: ['Olavarría'], 
         descripcionPrincipal: "La creatina micronizada es la unión de tres aminoácidos que ofrece mayores ventajas que la creatina normal, mejorando su asimilación. La creatina monohidrato es recomendada durante un plan de entrenamiento para aumentar la fuerza, resistencia y recuperación.",
         modoUso: "Durante los primeros 4 días, consumir 4 porciones diarias, y los días siguientes consumir una o dos porciones diarias preferentemente con el estómgo vacío.",
         ingredientes: "Creatina monohidrato micronizada de máxima pureza - 100% Pura.",
@@ -674,6 +673,7 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
 
 
