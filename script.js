@@ -195,7 +195,7 @@ const products = [
     {
     categoria: "Combo",
     nombre: "Creatina x 3",
-    precio: 65900,
+    precio: 69900,
     sinStock: [],
     descripcionSecundaria: "3 CREATINAS 300G",
     imagen: "img/combo2.jpg"
@@ -697,6 +697,7 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
 
 
