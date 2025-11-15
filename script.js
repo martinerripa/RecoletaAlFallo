@@ -62,6 +62,87 @@ const products = [
         imagen: "img/pancakes.webp"
     },
     {
+    categoria: "Proteinas",
+    nombre: "Platinum Whey Protein 3Kg - Vainilla",
+    precio: 116900,
+    sabores: ["Vainilla"],
+    sinStock: [], 
+    descripcionPrincipal: "Compuesta por ultra concentrado, aislado e hidrolizado de suero de máxima pureza, obtenidos por métodos no agresivos que garantizan la calidad y estabilidad del producto. Su agradable sabor y alta disolución lo convierten en la opción inteligente a la hora de agregar proteínas de alto valor biológico a nuestra dieta, o como parte de un programa nutricional deportivo. 100% NATURAL GRASS FED PROTEIN. Fuente natural de aminoácidos esenciales, aminoácidos de cadena ramificada y Glutamina.",
+    modoUso: "Mezclar 1 medida de Platinum Whey Protein en 200 cm3 de agua o leche descremada. Consumir 1 hora antes del entrenamiento, luego del mismo o en cualquier momento del día para alcanzar tus necesidades proteicas.",
+    ingredientes: "Ultra Concentrado de Proteína de Suero Lácteo, Aislado de Proteína de Suero Lácteo, Hidrolizado de Proteína de Suero Lácteo, Cacao, ARO: Sabor Chocolate, EDU: Sucralosa (40mg/100cm3), EDU: Potasio Acesulfamo (30mg/100cm3), Col: Caramelo. *El sabor chocolate suizo y cookies and cream tienen cacao. CONTIENE DERIVADOS DE LECHE.",
+    advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo o lactancia. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C. Información adicional: Fenilcetonúricos: contiene Fenilalanina.",
+    descripcionSecundaria: "Suplemento dietario en polvo dietético para preparar bebida a base de proteínas de suero. 3KG | 100 SERV. | 25GR DE PROTEÍNA POR SERVICIO.",
+    imagen: "img/pancakes.webp"
+    },
+    
+    {
+    categoria: "Preentreno",
+    nombre: "TNT-Dynamite 240g",
+    precio: 19600,
+    sabores: ["Grape 🍇", "Açaí"],
+    sinStock: [],
+    descripcionPrincipal: "",
+    modoUso: "Diluir 1 medida colmada (8g) en 500cm3 de agua fría una vez al día. Consumir 15 a 30 minutos antes del entrenamiento o la competencia. No consumir más de 2 porciones diarias.",
+    ingredientes: "Beta Alanina, Creatina Nitrato, Arginina alfaketoglutarato, Taurina, L-Tirosina micronizada, Dióxido de Silicio, Ácido Málico, Ácido Cítrico, Vitamina C (Ácido Ascórbico), ARO: sabor *según corresponda, Polidextrosa, Silicato de Calcio, Cafeína Anhidra, EDU Sucralosa (12,8mg/100cm3), EDU: Potasio Acesulfamo (12,4mg/100cm3), Niacinamida, Colorante, Vitamina B6 (Piridoxina), Ácido Fólico, Vitamina B12 (cianocobalamina).",
+    advertencias: "Producto para adultos sanos mayores de 18 años. Consultar a un médico si se está bajo medicación. No consumir en caso de alta o baja presión, arritmia, problemas cardíacos, hepáticos, renales, tiroideos, enfermedades psiquiátricas, diabetes o problemas de próstata. No consumir en embarazo, lactancia, niños o adultos mayores. No mezclar con alcohol ni energizantes. Nunca exceder 2 porciones en 24 hs ni usar más de 5 días a la semana. La beta alanina puede generar hormigueo. Mantener en lugar fresco y seco. Fenilcetonúricos: contiene fenilalanina.",
+    descripcionSecundaria: "Polvo para preparar bebida analcohólica dietética con cafeína y taurina suplementada con vitaminas. 240 GRAMOS | 30 SERV. | SUPERIOR PERFORMANCE",
+    imagen: "img/pancakes.webp"
+    },
+    
+    {
+    categoria: "Aminoácidos",
+    nombre: "Mtor BCAA 270g",
+    precio: 23400,
+    sabores: ["Fruit Punch"],
+    sinStock: [],
+    descripcionPrincipal: "",
+    modoUso: "Como suplemento dietario mezclar 1 porción (13,5g / 1 scoop) en 500cm3 de agua fría (ajustar la porción a su preferencia). En los días de entrenamiento consumir 1 porción durante el entrenamiento y 1 porción luego del mismo. En los días en los que no hay entrenamiento consumir 1 porción al día. Para mejores resultados consumir diariamente.",
+    ingredientes: "L-Leucina, L-Glutamina, L-Citrulina Malato, Ácido Cítrico, L-Valina, L-Isoleucina, Sodio Citrato, ARO: sabor *según corresponda, Cloruro de Potasio, Ácido Málico, Cloruro de Sodio, EDU: Sucralosa (27mg/100cm3), EDU: Potasio Acesulfamo (10mg/100cm3), Colorante, Vitamina B6 (Piridoxina).",
+    advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo, lactancia ni en niños. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C.",
+    descripcionSecundaria: "Suplemento dietario en polvo dietético para preparar bebida a base de aminoácidos. 270G | 20 SERV. | REPLENISHES ELECTROLYTES",
+    imagen: "img/pancakes.webp"
+    },
+    {
+    categoria: "Magnesio", 
+    nombre: "Citrato de Magnesio - 60 Cápsulas",
+    precio: 13900,
+    sabores: ["Sin Sabor"],
+    sinStock: [],
+    descripcionPrincipal: "El Citrato de Magnesio ayuda a tener un descanso reparador y reducir la fatiga, relaja los músculos para su mejor recuperación y tiene un efecto regulador de la función intestinal.",
+    modoUso: "Consumir 1 porción diaria (2 cápsulas) o como lo indique su médico.",
+    ingredientes: "Citrato de Magnesio.",
+    advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o nutricionista. No consumir en caso de embarazo, mujeres en periodo de lactancia ni en niños. Consumir este producto de acuerdo a las recomendaciones de ingesta diaria establecidas en el rótulo. El consumo de suplementos dietarios no reemplaza una dieta variada y equilibrada. Indicado para personas que realizan ejercicio físico. Su consumo debe realizarse bajo control médico. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C.",
+    descripcionSecundaria: "Suplemento dietario a base de magnesio en cápsulas. Libre de gluten. Sin T.A.C.C. Contiene 60 cápsulas.",
+    imagen: "img/pancakes.webp"
+    },
+
+    {
+    categoria: "",
+    nombre: "HMB - 180 Cápsulas",
+    precio: 24900,
+    sabores: ["Sin Sabor"],
+    sinStock: [],
+    descripcionPrincipal: "",
+    modoUso: "Como suplemento dietario consumir 2 cápsulas 3 veces al día, junto con las comidas que contengan proteína. Recomendación: se recomienda su uso con Creatine Monohydrate y Beta-Alanine.",
+    ingredientes: "Calcio Beta-Hidroxi, Beta-Metilbutarato Monohidrato, Dióxido de Silicio.",
+    advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo, lactancia ni en niños. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C.",
+    descripcionSecundaria: "Suplemento dietario a base de Calcio Beta-Hidroxi Beta-Metilbutarato Monohidrato en cápsulas. 180 CÁPSULAS | 90 SERV. | HMB 1G POR PORCIÓN. Strength and Recovery.",
+    imagen: "img/pancakes.webp"
+    },
+    {
+    categoria: "Proteina",
+    nombre: "Just Plant Protein 2 Lb",
+    precio: 39900,
+    sabores: ["Sin Sabor"],
+    sinStock: [],
+    descripcionPrincipal: "Just Plant es una proteína a base de aislado de proteína de arveja. Es 100% vegana, keto y libre de gluten.",
+    modoUso: "Es ideal para sumar proteínas de alto valor biológico a tus recetas favoritas o como ingrediente principal en tus batidos proteicos.",
+    ingredientes: "",
+    advertencias: "",
+    descripcionSecundaria: "",
+    imagen: "img/pancakes.webp"
+    },
+    {
         categoria: "Preentreno",
         nombre: "PUMP V8 - 285 Gr",
         precio: 26340,
@@ -697,6 +778,7 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
 
 
