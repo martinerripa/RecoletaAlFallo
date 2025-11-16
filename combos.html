@@ -329,6 +329,73 @@
                 padding: 8px 15px;
             }
         }
+            /* ====== FIX COMBOS PARA CELULAR (ESTÉTICA PREMIUM) ====== */
+        @media (max-width: 480px) {
+        
+            /* Cards menos altas, diseño más compacto */
+            .combo-card {
+                border-radius: 12px !important;
+                padding: 0 !important;
+                overflow: hidden;
+            }
+        
+            /* Imagen mucho más chica */
+            .combo-image {
+                height: 150px !important;     /* antes 200–300 */
+                padding: 10px !important;
+            }
+        
+            .combo-image img {
+                max-height: 100% !important;
+            }
+        
+            /* Badge más chico */
+            .combo-badge {
+                font-size: 11px !important;
+                padding: 6px 10px !important;
+            }
+        
+            /* Título del combo */
+            .combo-name {
+                font-size: 14px !important;
+                text-align: center !important;
+                margin-bottom: 8px !important;
+            }
+        
+            /* Caja "Incluye" más chica */
+            .combo-includes {
+                padding: 10px !important;
+                margin-bottom: 10px !important;
+            }
+        
+            .combo-includes-title {
+                font-size: 12px !important;
+                margin-bottom: 4px !important;
+            }
+        
+            .combo-includes-list {
+                font-size: 11px !important;
+                line-height: 1.4 !important;
+            }
+        
+            /* Precio mucho más compacto */
+            .combo-price-new {
+                font-size: 18px !important;
+                padding-top: 10px !important;
+                margin-bottom: 10px !important;
+                border-top-width: 1px !important;
+            }
+        
+            /* Botón ALINEADO al centro y más chico */
+            .combo-button {
+                width: 85% !important;
+                margin: 0 auto 12px auto !important;
+                padding: 10px !important;
+                font-size: 12px !important;
+                border-radius: 8px !important;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -440,3 +507,4 @@
 </body>
 
 </html>
+
