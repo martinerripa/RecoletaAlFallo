@@ -5,15 +5,7 @@ const products = [
     {
         categoria: "Proteina",
         nombre: "Whey Protein Doypack 2 Lb",
-        precio: 39900,
-        sabores: ["Chocolate 🍫", "Vainilla 🍦", "C&C 🍪","Frutilla 🍓","Banana 🍌"],
-        sinStockPorSabor: {
-            "Chocolate 🍫": [],
-            "Vainilla 🍦": [],
-            "C&C 🍪": ['Olavarría','Recoleta y alrededores'],
-            "Frutilla 🍓":['Olavarría'],
-            "Banana 🍌":['Recoleta y alrededores','Olavarría']
-        }, 
+        precio: 39900, 
         descripcionPrincipal: "Compuesta por ultra concentrado, aislado e hidrolizado de suero de máxima pureza, obtenidos por métodos no agresivos que garantizan la calidad y estabilidad del producto.\n\nSu agradable sabor y alta disolución lo convierten en la opción inteligente a la hora de agregar proteínas de alto valor biológico a nuestra dieta, o como parte de un programa nutricional deportivo.\n\n100% NATURAL GRASS FED PROTEIN\n\nFuente natural de aminoácidos esenciales, aminoácidos de cadena ramificada y Glutamina.",
         modoUso: "Mezclar 1 medida de Platinum Whey Protein en 200cm3 de agua o leche descremada. Consumir 1 hora antes del entrenamiento, luego del mismo o simplemente en cualquier momento del día para alcanzar tus necesidades proteicas.",
         ingredientes: "Ultra Concentrado de Proteína de Suero Lácteo, Aislado de Proteína de Suero Lácteo, Hidrolizado de Proteína de Suero Lácteo, Cacao, Saborizante, Edulcorantes.",
@@ -26,7 +18,6 @@ const products = [
         categoria: "Magnesio",
         nombre: "Citrato de Magnesio Sin Sabor - Polvo 500 Gr",
         precio: 23900,
-        sinStock: [],
         descripcionPrincipal: "El Citrato de Magnesio ayuda a tener un descanso reparador y reducir la fatiga, relaja los músculos para su mejor recuperación y tiene un efecto regulador de la función intestinal.",
         modoUso: "Consumir 1 porción diaria (3.5 gramos) o como lo indique su médico.",
         ingredientes: "Citrato de Magnesio.",
@@ -39,7 +30,6 @@ const products = [
         categoria: "Pancakes",
         nombre: "Pancakes Proteicos sabor Chocolate",
         precio: 12000,
-        sinStock: [],
         descripcionPrincipal: "¿QUÉ SON LOS PANCAKES PROTEICOS? Son pancakes estilo americano que hacen de tus desayunos y meriendas algo totalmente irresistible. Una opción deliciosa, nutritiva y libre de gluten, pensada para acompañar un estilo de vida saludable y activo.",
         modoUso: "¿CÓMO SE PREPARAN? Colocar dos cucharadas soperas del producto (25 g) y 30 ml de agua o leche en un recipiente. Mezclar con tenedor. Cocinar en sartén precalentada y rociada con aceite a fuego medio aproximadamente 1,5 minutos por lado. TIP: Probálos calientes y fríos. Combinálos con pasta de maní, miel, frutos secos o con tus frutas preferidas.",
         ingredientes: "Harina de avena libre de gluten, clara de huevo, leche descremada, polvo para hornear, cacao puro.",
@@ -52,7 +42,6 @@ const products = [
         nombre: "Protein Bar",
         precio: 24900,
         sabores: ["Chocolate"],
-        sinStock: [],
         descripcionPrincipal: "ENA PROTEIN BAR es un alimento que proporciona una combinación de carbohidratos y proteínas (2:1), una opción ideal para optimizar el rendimiento deportivo y obtener energía sostenida durante todo el día, previniendo la fatiga durante el ejercicio y acelerando la recuperación post-entrenamiento.",
         modoUso: "Consumir antes o después del entrenamiento o en cualquier momento del día. Práctica y fácil de transportar, es el snack ideal para acompañar tu rutina diaria.",
         ingredientes: "Jarabe de glucosa, jarabe de maíz de alta fructosa, proteína aislada de soja, proteínas concentradas de suero, baño de chocolate semiamargo (emulsionantes: INS 322, INS 442, INS 476, aromatizante natural vainilla), proteína texturizada de soja, aceite de girasol, grasa bovina refinada, maltodextrina, cacao en polvo, crispín de cereal, sorbitol (HUM), aromatizantes/saborizantes. CONTIENE: trigo, avena, sulfitos, derivados de leche, soja, maní y trazas de huevo. Puede contener derivados de cebada.",
@@ -65,7 +54,6 @@ const products = [
         nombre: "Enargy Gel+ Con Cafeína",
         precio: 13900,
         sabores: ["Vainilla"],
-        sinStock: [],
         descripcionPrincipal: "- Aporta energía \"en movimiento\". Ideal para trabajos aeróbicos. Con sales de rehidratación y antioxidantes. Energy Gel fue creado para optimizar el consumo de nutrientes de manera conveniente, portable y con ricos sabores. Para consumirlo cortá la parte superior del pack e ingerilo por completo.",
         modoUso: "Se puede tomar 1 Energy Gel+ 15 minutos antes de la actividad física y otro 45 minutos después de haber comenzado para mantener un suministro constante de energía. También se puede consumir en entretiempos o pausas. Para ingerirlo, cortar la parte superior del pack y consumir directamente.",
         ingredientes: "Jarabe de maíz de alta fructuosa, jarabe de glucosa, glutamina, citrato de magnesio, extracto seco de ginseng (Eleutherococcus senticosus, raíces), cloruro de sodio, cafeína, taurina, vitamina C, vitamina E, cloruro de potasio, citrato de sodio (ACREG), benzoato de sodio (CONS), sorbato de potasio (CONS), ácido cítrico (ACI), carragenina (ESP), aromatizantes. Puede contener derivados de leche y soja.",
@@ -78,7 +66,6 @@ const products = [
         categoria: "Creatina",
         nombre: "Creatina Monohidrato 1Kg",
         precio: 82500,
-        sinStock: ['Olavarría'], 
         descripcionPrincipal: "La creatina micronizada es la unión de tres aminoácidos que ofrece mayores ventajas que la creatina normal, mejorando su asimilación. La creatina monohidrato es recomendada durante un plan de entrenamiento para aumentar la fuerza, resistencia y recuperación.",
         modoUso: "Durante los primeros 4 días, consumir 4 porciones diarias, y los días siguientes consumir una o dos porciones diarias preferentemente con el estómgo vacío.",
         ingredientes: "Creatina monohidrato micronizada de máxima pureza - 100% Pura.",
@@ -91,7 +78,6 @@ const products = [
         categoria: "Creatina",
         nombre: "Creatina Monohidrato 300g Doypack",
         precio: 24900,
-        sinStock: [], 
         descripcionPrincipal: "La creatina micronizada es la unión de tres aminoácidos que ofrece mayores ventajas que la creatina normal, mejorando su asimilación.\n\nLa creatina monohidratado es recomendada durante un plan de entrenamiento para aumentar la fuerza, resistencia y recuperación.",
         modoUso: "Durante los primeros 4 días, consumir 4 porciones diarias, y los días siguientes consumir una o dos porciones diarias preferentemente con el estómago vacío.",
         ingredientes: "Creatina monohidrato micronizada de máxima pureza - 100% Pura.",
@@ -103,7 +89,6 @@ const products = [
         categoria: "Pancakes",
         nombre: "Pancakes Proteicos sabor vainilla",
         precio: 12000,
-        sinStock: [], 
         descripcionPrincipal: "¿QUÉ SON LOS PANCAKES PROTEICOS? Son pancakes estilo americano que hacen de tus desayunos y meriendas algo totalmente irresistible. Una opción deliciosa, nutritiva y LIBRE DE GLUTEN, pensada para acompañar un estilo de vida saludable y activo",
         modoUso: "¿CÓMO SE PREPARAN? Colocar dos cucharadas soperas del producto (25 g) y 30 ml de agua o leche en un recipiente. Mezclar con tenedor. Cocinar a sartén precalentada y rociada con aceite a fuego medio aproximadamente 1,5 minutos por lado",
         ingredientes: "Harina de avena Libre de gluten, clara de huevo, leche descremada, polvo para hornear, ARO: vainilla, EDU: INS 955.",
@@ -116,7 +101,6 @@ const products = [
         nombre: "Platinum Whey Protein 3Kg - Vainilla",
         precio: 116900,
         sabores: ["Vainilla"],
-        sinStock: [], 
         descripcionPrincipal: "Compuesta por ultra concentrado, aislado e hidrolizado de suero de máxima pureza, obtenidos por métodos no agresivos que garantizan la calidad y estabilidad del producto. Su agradable sabor y alta disolución lo convierten en la opción inteligente a la hora de agregar proteínas de alto valor biológico a nuestra dieta, o como parte de un programa nutricional deportivo. 100% NATURAL GRASS FED PROTEIN. Fuente natural de aminoácidos esenciales, aminoácidos de cadena ramificada y Glutamina.",
         modoUso: "Mezclar 1 medida de Platinum Whey Protein en 200 cm3 de agua o leche descremada. Consumir 1 hora antes del entrenamiento, luego del mismo o en cualquier momento del día para alcanzar tus necesidades proteicas.",
         ingredientes: "Ultra Concentrado de Proteína de Suero Lácteo, Aislado de Proteína de Suero Lácteo, Hidrolizado de Proteína de Suero Lácteo, Cacao, ARO: Sabor Chocolate, EDU: Sucralosa (40mg/100cm3), EDU: Potasio Acesulfamo (30mg/100cm3), Col: Caramelo. *El sabor chocolate suizo y cookies and cream tienen cacao. CONTIENE DERIVADOS DE LECHE.",
@@ -130,7 +114,6 @@ const products = [
         nombre: "TNT-Dynamite 240g",
         precio: 19600,
         sabores: ["Grape 🍇", "Açaí"],
-        sinStock: [],
         descripcionPrincipal: "",
         modoUso: "Diluir 1 medida colmada (8g) en 500cm3 de agua fría una vez al día. Consumir 15 a 30 minutos antes del entrenamiento o la competencia. No consumir más de 2 porciones diarias.",
         ingredientes: "Beta Alanina, Creatina Nitrato, Arginina alfaketoglutarato, Taurina, L-Tirosina micronizada, Dióxido de Silicio, Ácido Málico, Ácido Cítrico, Vitamina C (Ácido Ascórbico), ARO: sabor *según corresponda, Polidextrosa, Silicato de Calcio, Cafeína Anhidra, EDU Sucralosa (12,8mg/100cm3), EDU: Potasio Acesulfamo (12,4mg/100cm3), Niacinamida, Colorante, Vitamina B6 (Piridoxina), Ácido Fólico, Vitamina B12 (cianocobalamina).",
@@ -144,7 +127,6 @@ const products = [
         nombre: "Mtor BCAA 270g",
         precio: 23400,
         sabores: ["Fruit Punch"],
-        sinStock: [],
         descripcionPrincipal: "",
         modoUso: "Como suplemento dietario mezclar 1 porción (13,5g / 1 scoop) en 500cm3 de agua fría (ajustar la porción a su preferencia). En los días de entrenamiento consumir 1 porción durante el entrenamiento y 1 porción luego del mismo. En los días en los que no hay entrenamiento consumir 1 porción al día. Para mejores resultados consumir diariamente.",
         ingredientes: "L-Leucina, L-Glutamina, L-Citrulina Malato, Ácido Cítrico, L-Valina, L-Isoleucina, Sodio Citrato, ARO: sabor *según corresponda, Cloruro de Potasio, Ácido Málico, Cloruro de Sodio, EDU: Sucralosa (27mg/100cm3), EDU: Potasio Acesulfamo (10mg/100cm3), Colorante, Vitamina B6 (Piridoxina).",
@@ -156,7 +138,6 @@ const products = [
         categoria: "Magnesio", 
         nombre: "Citrato de Magnesio - 60 Cápsulas",
         precio: 13900,
-        sinStock: [],
         descripcionPrincipal: "El Citrato de Magnesio ayuda a tener un descanso reparador y reducir la fatiga, relaja los músculos para su mejor recuperación y tiene un efecto regulador de la función intestinal.",
         modoUso: "Consumir 1 porción diaria (2 cápsulas) o como lo indique su médico.",
         ingredientes: "Citrato de Magnesio.",
@@ -169,7 +150,6 @@ const products = [
         categoria: "",
         nombre: "HMB - 180 Cápsulas",
         precio: 24900,
-        sinStock: [],
         descripcionPrincipal: "",
         modoUso: "Como suplemento dietario consumir 2 cápsulas 3 veces al día, junto con las comidas que contengan proteína. Recomendación: se recomienda su uso con Creatine Monohydrate y Beta-Alanine.",
         ingredientes: "Calcio Beta-Hidroxi, Beta-Metilbutarato Monohidrato, Dióxido de Silicio.",
@@ -181,7 +161,6 @@ const products = [
         categoria: "Proteina",
         nombre: "Just Plant Protein 2 Lb",
         precio: 39900,
-        sinStock: [],
         descripcionPrincipal: "Just Plant es una proteína a base de aislado de proteína de arveja. Es 100% vegana, keto y libre de gluten.",
         modoUso: "Es ideal para sumar proteínas de alto valor biológico a tus recetas favoritas o como ingrediente principal en tus batidos proteicos.",
         ingredientes: "",
@@ -193,10 +172,7 @@ const products = [
         categoria: "Preentreno",
         nombre: "PUMP V8 - 285 Gr",
         precio: 26340,
-        sabores: ["Sandía 🍉", "Uva 🍇"],
-        sinStockPorSabor: {
-            "Sandía 🍉": ['Recoleta y alrededores','Olavarría'],
-            "Uva 🍇": ['Recoleta y alrededores','Olavarría']},  
+        sabores: ["Sandía 🍉", "Uva 🍇"], 
         descripcionPrincipal: "Pre-entrenamiento de última generación con 8 ingredientes activos diseñados para maximizar tu rendimiento.\n\nFórmula avanzada con beta alanina, citrulina, cafeína y complejo vitamínico para energía explosiva y mejor concentración.",
         modoUso: "Disolver 1 medida (9,5g) en 500cm3 de agua fría. Consumir 15 a 30 minutos antes del entrenamiento o la competencia. No consumir más de 2 porciones diarias.",
         ingredientes: "Betaina Anhidra, Beta Alanina, Arginina Alfaketoglutarato, L-Citrulina Malato, Extracto de Guaraná, Taurina, L-Tirosina, Cafeína Anhidra, Vitamina C, Vitamina B6, Vitamina B12.",
@@ -208,7 +184,6 @@ const products = [
         categoria: "Vitaminas",
         nombre: "All in One Multivitamin - 60 Cápsulas",
         precio: 17420,
-        sinStock: [], 
         descripcionPrincipal: "Complejo multivitamínico completo con 23 vitaminas y minerales esenciales para apoyar tu salud general y rendimiento deportivo.\n\nFórmula balanceada que cubre todas tus necesidades nutricionales diarias.",
         modoUso: "Tomar 1 comprimido diariamente con las comidas.",
         ingredientes: "23 vitaminas y minerales incluyendo Vitaminas A, C, D, E, Complejo B completo, Zinc, Magnesio, Calcio, Hierro y más.",
@@ -220,7 +195,6 @@ const products = [
         categoria: "Omega3",
         nombre: "Omega 3 Fish Oil - 60 Cápsulas",
         precio: 27900,
-        sinStock: [], 
         modoUso: "Consumir 2 cápsulas al día.",
         ingredientes: "Suplemento Dietario a Base de Aceite Natural de Pescado",
         advertencias: "Suplementa Dietas insuficientes, consulte a su médico y/o nutricionista. No consumir en caso de embarazo, mujeres en periodo de lactancia ni en niños. Consumir este producto de acuerdo a las recomendaciones de ingesta diaria establecidas en el rotulo. El consumo de suplementos dietarios no reemplaza una dieta variada y equilibrada. Este producto está indicado para personas que realizan ejercicio físico. Su consumo debe realizarse bajo control médico. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25ºC.",
@@ -232,9 +206,6 @@ const products = [
         nombre: "COLLAGEN 210 Gr",
         precio: 17000,
         sabores: ["Frutos Rojos 🍓🫐", "Limón 🍋"],
-        sinStockPorSabor: {
-            "Frutos Rojos 🍓🫐": [],
-            "Limón 🍋": [],},
         modoUso: "Diluir 2 medidas (10,5g) en 300ml de agua, con el estómago vacío.",
         ingredientes: "Colágeno Hidrolizado, Resveratrol, ARO: Sabor Limón, EDU: Potasio Acesulfamo (30mg/100cm3), EDU: Sucralosa (15mg/100cm3), Vitamina C (Ácido Ascórbico), Ácido Hialurónico, Coenzima Q10.",
         advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o nutricionista. No consumir en caso de embarazo, lactancia, ni en niños. Consumir este producto de acuerdo a las recomendaciones de ingesta diaria establecidas en el rótulo. El consumo de suplementos dietarios no reemplaza una dieta variada y equilibrada. Este producto está indicado para personas que realizan ejercicios físicos. Su consumo debe realizarse bajo control médico. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25oC.",
@@ -245,7 +216,6 @@ const products = [
         categoria: "Quemador",
         nombre: "Thermo Fuel Max - 120 Cápsulas",
         precio: 18900,
-        sinStock: [], 
         modoUso: "Tomar 2 cápsulas por la mañana y 2 cápsulas 15 minutos antes del entrenamiento o como lo indique su médico.",
         ingredientes: "Extracto Natural de Canephora Robusta (Green Coffee), Ext. Nat. de Papa (Solanum Tuberosum), Ext. Nat. de Naranja Amarga, Ext. Nat. de Té Verde, Ext. Natural de Guaraná, Ext. Natural de Uva Ursi, Vitamina B6, Riboflavina (Vitamina B2), Tiamina (Vitamina B1), Picolinato de Cromo y Vitamina B12. Información adicional: Fenilcetonúricos, contiene fenilalanina.",
         advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo, lactancia ni en niños. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C. Diabéticos: este producto contiene cromo, consulte a su médico.",
@@ -256,7 +226,6 @@ const products = [
         categoria: "Magnesio",
         nombre: "ENA - Citrato de Magnesio",
         precio: 13900,
-        sinStock: [], 
         descripcionPrincipal: "El magnesio favorece al metabolismo energético normal y ayuda a disminuir el cansancio y la fatiga. Asimismo, participa en el correcto funcionamiento del sistema nervioso y muscular. También contribuye a la síntesis proteica y al mantenimiento de huesos en condiciones normales.",
         modoUso: "Se recomienda tomar de 1 a 4 cápsulas de Citrato de magnesio en cualquier momento del día o bien, 30 minutos antes o después de sus principales comidas.",
         ingredientes: " 433 mg de citrato de magnesio + 70mg de magnesio",
@@ -268,7 +237,6 @@ const products = [
         categoria: "Preentreno",
         nombre: "Caffeine 200 - 30 Cápsulas",
         precio: 9900,
-        sinStock: [], 
         modoUso: "Como suplemento dietario consumir 1 cápsula.",
         ingredientes: "Cafeína 200mg",
         advertencias: "Suplementa Dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo, mujeres en periodo de lactancia ni en niños. Consumir este producto de acuerdo a las recomendaciones de ingesta diaria establecidas en el rotulo. El consumo de suplementos dietarios no reemplaza una dieta variada y equilibrada. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C.",
@@ -279,7 +247,6 @@ const products = [
         categoria: "Vitaminas",
         nombre: "Vitamina C - 60 Cápsulas",
         precio: 7500,
-        sinStock: [], 
         modoUso: "Consumir 1 porción diaria (2 cápsulas) o como lo indique su médico.",
         ingredientes: "Vitamina C (Ácido Ascórbico)",
         advertencias: "Supera la ingesta diaria de Vitamina C. Consulte a su médico y/o nutricionista. No consumir en caso de embarazo, mujeres en periodo de lactancia ni en niños. Consumir este producto de acuerdo a las recomendaciones de ingesta diaria establecidas en el rotulo. El consumo de suplementos dietarios no reemplaza una dieta variada y equilibrada. Este producto está indicado para personas que realizan ejercicio físico. Su consumo debe realizarse bajo control médico. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25ºC",
@@ -290,7 +257,6 @@ const products = [
         categoria: "ZMA",
         nombre: "STAR - ZMA - 90 Cápsulas",
         precio: 16000,
-        sinStock: [], 
         descripcionPrincipal: "REAL ZMA contiene la combinación adecuada de los tres elementos claves: Magnesio (como aspartato), Zinc (como monometionina y aspartato) y Vitamina B6. NATURAL | NON-HORMONAL FORMULA Tested for Purity and Potency",
         modoUso: "MUJERES: Tomar 2 cápsulas HOMBRES: Tomar 3 cápsulas. Antes de acostarse, preferentemente con el estómago vacío o como lo indique su especialista.",
         ingredientes: "Magnesio Aspartato, Zinc Monometionina Aspartato, Vitamina B6 (Piridoxina HCI), Dióxido de Silicio, Magnesio Estearato.",
@@ -302,7 +268,6 @@ const products = [
         categoria: "ZMA",
         nombre: "ENA - ZMA - 60 Cápsulas",
         precio: 12900,
-        sinStock: [], 
         descripcionPrincipal: "ZMA es un complemento nutricional formulado para aumentar la masa muscular con una potente mezcla de Zinc, Magnesio y Vitamina B6. El Zinc soporta la función celular, el Magnesio mejora la fuerza y resistencia y la Vitamina B6 ayuda a un mejor descanso. Adecuado para todos los niveles de actividad física desde levantamiento de pesas hasta deportes de resistencia.",
         modoUso: "Tomar 2 cápsulas de ZMA antes de acostarte para optimizar la recuperación y el crecimiento muscular.",
         ingredientes: "Óxido de magnesio, gluconato de zinc, vitamina B6, INS 460i (EST), INS 470i (ANAH).  PUEDE CONTENER DERIVADOS DE LECHE Y SOJA.",
@@ -315,7 +280,6 @@ const products = [
         categoria: "Combo",
         nombre: "Creatina + Proteína",
         precio: 59900,
-        sinStock: [],
         descripcionSecundaria: "1 PROTEÍNA + 1 CREATINA",
         imagen: "img/combo1.jpg"
     },
@@ -323,7 +287,6 @@ const products = [
         categoria: "Combo",
         nombre: "Creatina x 3",
         precio: 69900,
-        sinStock: [],
         descripcionSecundaria: "3 CREATINAS 300G",
         imagen: "img/combo2.jpg"
     },
@@ -331,7 +294,6 @@ const products = [
         categoria: "Combo",
         nombre: "2 Creatinas + 2 Proteínas",
         precio: 115900,
-        sinStock: [],
         descripcionSecundaria: "2 PROTEÍNAS + 2 CREATINAS",
         imagen: "img/combo3.png"
     },
@@ -341,7 +303,6 @@ const products = [
         nombre: "Creatina + Electrolitos",
         precio: 24900,
         sabores: ["Pink Lemonade", "Blue Lemonade"],
-        sinStock: [],
         descripcionPrincipal: "Aumenta la fuerza y potencia muscular. Mejora la recuperación. Optimiza la hidratación al reponer sales minerales. Creatina + Electrolitos es una combinación que aporta los beneficios de la creatina y optimiza la hidratación al reponer sales minerales. Su fórmula potencia el entrenamiento y brinda soporte energético sostenido. Aporta 5 g de creatina monohidrato micronizada por porción junto con un blend balanceado de electrolitos (sodio, potasio, magnesio y cloruros), ayudando a sostener la función muscular y evitar calambres, fatiga y falta de sales.",
         modoUso: "Diluir un scoop en 200 ml de agua.",
         ingredientes: "Creatina monohidrato, citrato de sodio, magnesio sulfato, cloruro de sodio, cloruro de potasio, ácido cítrico anhidro (ACI), aromatizantes, carmín (COL), sucralosa (370 mg/100 g) (EDU), amarillo ocaso FCF (COL). CONTENIDO: Puede contener derivados de leche y soja.",
@@ -355,7 +316,6 @@ const products = [
         nombre: "100% Whey Protein",
         precio: 39600,
         sabores: ["Vainilla", "Chocolate"],
-        sinStock: [],
         descripcionPrincipal: "¡TU PROTEÍNA PARA TODOS LOS DÍAS! Complementá tu alimentación con 100% WHEY, una proteína diseñada para tu consumo diario. Ideal para sumar proteínas en desayunos, meriendas o como snack post entreno. Con 20 g de proteína por porción, es una excelente opción para hombres y mujeres físicamente activos. Favorece la síntesis de masa muscular y es rica en BCAA.",
         modoUso: "Mezclar una porción (scoop) en un shaker ENA con 200 cm³ de agua o leche preferentemente descremada. Agitar bien y consumir en desayunos, meriendas o en cualquier momento del día.",
         ingredientes: 
@@ -371,7 +331,6 @@ const products = [
         nombre: "CRUDDA BAR AVELLANA CHOCOLATE - 10 barritas",
         precio: 16900,
         sabores: ["Avellana & Chocolate"],
-        sinStock: [],
         descripcionPrincipal: "La combinación perfecta para quienes buscan un snack saludable, nutritivo y delicioso. Barra con proteína de arveja, avellana, chocolate y pasta de maní, ideal para consumir en cualquier momento del día. Sin aditivos ni conservantes, con ingredientes naturales y de alta calidad.",
         modoUso: "Se utiliza como un snack nutritivo para consumir en cualquier momento del día: entre comidas, antes o después de entrenar, o como un gusto saludable.",
         ingredientes: "Fibra vegetal, pasta de maní, concentrado de proteína de arveja, pasas de uva, harina de maní, baño de chocolate semiamargo, maní, sorbitol, aislado de proteína de soja, quinoa pop (harina de quinoa), avellana, cacao amargo, sal marina, vitaminas A, D2, E y B12. Espesante: goma acacia. Aromatizante: esencia natural de avellanas. Emulsionante: lecitina de girasol. Antioxidante: tocoferoles. CONTIENE: maní, avellana y derivados de soja. PUEDE CONTENER: leche, almendra, castaña de cajú, nuez, sulfitos y coco.",
@@ -379,12 +338,9 @@ const products = [
         descripcionSecundaria: "",
         imagen: "img/CRUDA.webp"
     },
-
-
-
-    
-
 ];
+
+//NUEVO DE CHAT//
 
 // ========================================
 // VARIABLES GLOBALES
@@ -392,27 +348,6 @@ const products = [
 let cart = {};
 let currentProduct = null;
 let selectedFlavor = "";
-let selectedLocation = ""; // ← AGREGAR EST
-
-// ========================================
-// FUNCIÓN AUXILIAR PARA SINCRONIZAR STOCK
-// ========================================
-function tieneStock(ubicaciones) {
-    if (!selectedLocation || !ubicaciones) return true;
-    
-    // Si "Recoleta y alrededores" O "Resto del país" están en la lista sin stock,
-    // ambos se consideran sin stock (mismo inventario)
-    const mismoStock = ['Recoleta y alrededores', 'Resto del país'];
-    
-    if (ubicaciones.some(u => mismoStock.includes(u))) {
-        if (mismoStock.includes(selectedLocation)) {
-            return false; // Sin stock para Recoleta/Resto del país
-        }
-    }
-    
-    // Para Olavarría u otras ubicaciones, verificar directamente
-    return !ubicaciones.includes(selectedLocation);
-}
 
 // ========================================
 // RENDERIZAR PRODUCTOS
@@ -422,35 +357,14 @@ function renderProducts() {
     grid.innerHTML = products.map((product, index) => {
         const hasFlavors = product.sabores && product.sabores.length > 0;
         
-        // Verificar stock
-        let noStock = false;
-        let allFlavorsOutOfStock = false;
-        
-        if (selectedLocation) {
-            if (hasFlavors && product.sinStockPorSabor) {
-                // Verificar si TODOS los sabores están sin stock en esta ubicación
-                allFlavorsOutOfStock = product.sabores.every(sabor => 
-                    !tieneStock(product.sinStockPorSabor[sabor])
-                );
-                noStock = allFlavorsOutOfStock;
-            } else if (product.sinStock) {
-                // Producto sin sabores
-                noStock = !tieneStock(product.sinStock);
-            }
-        }
-        
         const buttonText = hasFlavors ? "Ver sabores" : "Agregar al carrito";
         const buttonAction = hasFlavors 
             ? `openProduct(${index})` 
             : `quickAddToCart(${index}); event.stopPropagation();`;
         
-        const stockBadge = noStock ? '<div class="stock-badge">SIN STOCK</div>' : '';
-        const disabledClass = noStock ? 'out-of-stock' : '';
-        
         return `
-            <div class="product-card ${disabledClass}" data-category="${product.categoria}" onclick="${noStock ? '' : `openProduct(${index})`}">
+            <div class="product-card" data-category="${product.categoria}" onclick="openProduct(${index})">
                 <div class="product-image">
-                    ${stockBadge}
                     <img src="${product.imagen}" alt="${product.nombre}" onerror="this.src='https://via.placeholder.com/300x300/4a1620/ffffff?text=${encodeURIComponent(product.nombre)}'">
                 </div>
                 <div class="product-info">
@@ -459,8 +373,8 @@ function renderProducts() {
                     <div class="product-price">$ ${product.precio.toLocaleString("es-AR")}</div>
                 </div>
                 <div class="quick-add-container">
-                    <button class="quick-add-btn" onclick="${noStock ? '' : buttonAction}" ${noStock ? 'disabled' : ''}>
-                        ${noStock ? 'SIN STOCK' : buttonText}
+                    <button class="quick-add-btn" onclick="${buttonAction}">
+                        ${buttonText}
                     </button>
                 </div>
             </div>
@@ -472,8 +386,6 @@ function renderProducts() {
 // ABRIR MODAL DE PRODUCTO
 // ========================================
 function openProduct(index) {
-
-    if (showLocationAlert()) return;
     currentProduct = products[index];
     selectedFlavor = "";
     
@@ -486,15 +398,7 @@ function openProduct(index) {
     const flavorSelector = document.getElementById("modalFlavorSelector");
     if (currentProduct.sabores && currentProduct.sabores.length > 0) {
         const saboresDisponibles = currentProduct.sabores.map(sabor => {
-            const sinStock = selectedLocation && 
-                            currentProduct.sinStockPorSabor && 
-                            currentProduct.sinStockPorSabor[sabor] && 
-                            !tieneStock(currentProduct.sinStockPorSabor[sabor]);
-            
-            const disabled = sinStock ? 'disabled' : '';
-            const sinStockText = sinStock ? ' (SIN STOCK)' : '';
-            
-            return `<option value="${sabor}" ${disabled}>${sabor}${sinStockText}</option>`;
+            return `<option value="${sabor}">${sabor}</option>`;
         }).join("");
         
         flavorSelector.innerHTML = `
@@ -534,7 +438,6 @@ function openProduct(index) {
     document.body.style.overflow = "hidden";
 }
 
-
 // ========================================
 // CERRAR MODAL
 // ========================================
@@ -559,36 +462,15 @@ function toggleCollapsible(header) {
 function addToCartFromModal() {
     if (!currentProduct) return;
     
-    // Validar sabor si el producto tiene sabores
     if (currentProduct.sabores && currentProduct.sabores.length > 0 && !selectedFlavor) {
         alert("Por favor seleccioná un sabor antes de agregar al carrito");
         return;
     }
     
-    // Verificar si el sabor tiene stock
-    if (selectedLocation && currentProduct.sabores && currentProduct.sabores.length > 0) {
-        if (currentProduct.sinStockPorSabor && 
-            currentProduct.sinStockPorSabor[selectedFlavor] && 
-            !tieneStock(currentProduct.sinStockPorSabor[selectedFlavor])) {
-            alert(`Lo sentimos, ${selectedFlavor} no tiene stock en ${selectedLocation}`);
-            return;
-        }
-    }
-    
-    // Verificar si el producto sin sabores tiene stock
-    if (selectedLocation && (!currentProduct.sabores || currentProduct.sabores.length === 0)) {
-        if (currentProduct.sinStock && !tieneStock(currentProduct.sinStock)) { 
-            alert(`Lo sentimos, este producto no tiene stock en ${selectedLocation}`);
-            return;
-        }
-    }
-    
-    // Nombre del producto (con sabor si aplica)
     const productName = currentProduct.sabores && currentProduct.sabores.length > 0 
         ? `${currentProduct.nombre} - ${selectedFlavor}` 
         : currentProduct.nombre;
     
-    // Agregar o incrementar cantidad
     if (cart[productName]) {
         cart[productName].quantity++;
     } else {
@@ -606,17 +488,8 @@ function addToCartFromModal() {
 // AGREGAR AL CARRITO RAPIDAMENTE (SIN MODAL)
 // ========================================
 function quickAddToCart(index) {
-
-    if (showLocationAlert()) return;
     const product = products[index];
     
-    // Verificar si tiene stock
-    if (selectedLocation && product.sinStock && !tieneStock(product.sinStock)) {
-        alert(`Lo sentimos, este producto no tiene stock en ${selectedLocation}`);
-        return;
-    }
-    
-    // Agregar o incrementar cantidad
     if (cart[product.nombre]) {
         cart[product.nombre].quantity++;
     } else {
@@ -639,22 +512,6 @@ function buyNow() {
     setTimeout(() => {
         toggleCart();
     }, 300);
-}
-
-// ========================================
-// SELECTOR DE UBICACION
-// ========================================
-function toggleLocation() {
-    document.getElementById("locationDropdown").classList.toggle("active");
-}
-
-function selectLocation(location) {
-    selectedLocation = location;
-    document.getElementById("selectedLocation").textContent = location;
-    document.querySelectorAll(".location-option").forEach(opt => opt.classList.remove("selected"));
-    event.target.classList.add("selected");
-    toggleLocation();
-    renderProducts(); // ← Re-renderizar productos con stock actualizado
 }
 
 // ========================================
@@ -781,12 +638,6 @@ function checkout() {
     }
     
     let message = "¡Hola! Quiero hacer un pedido:%0A%0A";
-    
-    // Agregar ubicación si fue seleccionada
-    if (selectedLocation) {
-        message += `📍 Ubicación: ${selectedLocation}%0A%0A`;
-    }
-    
     let total = 0;
     
     for (let productName in cart) {
@@ -853,24 +704,6 @@ document.head.appendChild(style);
 renderProducts();
 updateCart();
 
-// ========================================
-// ALERTA DE UBICACION
-// ========================================
-function showLocationAlert() {
-    if (!selectedLocation) {
-        document.getElementById("locationAlertModal").classList.add("active");
-        document.body.style.overflow = "hidden";
-        return true;
-    }
-    return false;
-}
-
-function closeLocationAlert() {
-    document.getElementById("locationAlertModal").classList.remove("active");
-    document.body.style.overflow = "auto";
-    // Abrir el selector de ubicación
-    document.getElementById("locationDropdown").classList.add("active");
-}
 
 
 
