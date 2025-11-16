@@ -486,7 +486,7 @@ function toggleCollapsible(header) {
 // ========================================
 // AGREGAR AL CARRITO DESDE MODAL
 // ========================================
-function addToCartFromModal() {
+function addToCartFromModal(showPopup = true) {
     if (!currentProduct) return;
     
     if (currentProduct.sabores && currentProduct.sabores.length > 0 && !selectedFlavor) {
@@ -509,8 +509,13 @@ function addToCartFromModal() {
     }
     
     updateCart();
-    showAddedToCartPopup(productName, selectedQuantity);
+
+    // ⭐ SOLO mostrar popup si showPopup = true (Agregar al carrito)
+    if (showPopup) {
+        showAddedToCartPopup(productName, selectedQuantity);
+    }
 }
+
 
 // ========================================
 // MOSTRAR POPUP AÑADIDO AL CARRITO
@@ -578,12 +583,16 @@ function quickAddToCart(index) {
 // COMPRAR AHORA
 // ========================================
 function buyNow() {
-    addToCartFromModal();
+    // Agregar al carrito SIN popup
+    addToCartFromModal(false);
+
     closeModal();
+
     setTimeout(() => {
-        toggleCart();
+        toggleCart(); // solo abre el carrito
     }, 300);
 }
+
 
 // ========================================
 // FILTRAR POR CATEGORIA
@@ -774,6 +783,7 @@ document.head.appendChild(style);
 // ========================================
 renderProducts();
 updateCart();
+
 
 
 
