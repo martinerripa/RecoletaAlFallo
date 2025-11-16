@@ -33,17 +33,6 @@
                             🎁 Ver Combos
                         </a>
                         </div>
-                    
-                    <div class="location-selector">
-                        <button class="location-btn" onclick="toggleLocation()">
-                            📍 <span id="selectedLocation">Elegí tu Ubicación</span>
-                        </button>
-                        <div class="location-dropdown" id="locationDropdown">
-                            <div class="location-option" onclick="selectLocation('Recoleta y alrededores')">Recoleta y alrededores</div>
-                            <div class="location-option" onclick="selectLocation('Olavarría')">Olavarría</div>
-                            <div class="location-option" onclick="selectLocation('Resto del país')">Resto del país</div>
-                        </div>
-                    </div>
                     <button class="cart-btn" onclick="toggleCart()">
                         🛒 Carrito <span class="cart-count" id="cartCount">0</span>
                     </button>
@@ -132,20 +121,6 @@
         </div>
     </div>
 
-
-
-    <!-- MODAL SELECCIONAR UBICACION  NUEVOOOOO-->
-
-    <!-- MODAL SELECCIONAR UBICACION  NUEVOOOOO-->
-    <div class="location-alert-modal" id="locationAlertModal">
-        <div class="location-alert-content">
-            <div class="location-alert-icon">📍</div>
-            <h3>¡Hola!</h3>
-            <p>Para ver la disponibilidad de productos, primero seleccioná tu ubicación</p>
-            <button class="location-alert-btn" onclick="closeLocationAlert()">Entendido</button>
-        </div>
-    </div>
-
     <!-- MODAL CARRITO -->
     <div class="cart-modal" id="cartModal">
         <div class="cart-content">
@@ -185,6 +160,7 @@
 </body>
 
 </html>
+
 
 
 
