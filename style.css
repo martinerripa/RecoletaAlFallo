@@ -1336,6 +1336,38 @@ nav {
     }
 }
 
+/* ==== GLOBITO MEDIANO "Chatea con nosotros" ==== */
+
+.whatsapp-tooltip {
+    position: fixed;
+    bottom: 30px;
+    right: 80px;          /* distancia perfecta al botón */
+    background: white;
+    color: #333;
+    padding: 8px 16px;    /* 👈 tamaño intermedio */
+    border-radius: 18px;  /* 👈 curva suave */
+    font-size: 13px;      /* 👈 letra un poquito más grande */
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    z-index: 998;
+    animation: fadeInTooltip 0.4s ease;
+    white-space: nowrap;
+}
+
+@keyframes fadeInTooltip {
+    from { opacity: 0; transform: translateX(10px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Ocultar en pantallas chicas */
+@media (max-width: 500px) {
+    .whatsapp-tooltip {
+        display: none;
+    }
+}
+
+
+
 
 
 
