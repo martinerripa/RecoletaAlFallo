@@ -112,7 +112,7 @@ const products = [
     ingredientes: "Citrato de Magnesio.",
     advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o nutricionista. No consumir en caso de embarazo, mujeres en periodo de lactancia ni en niños. Consumir este producto de acuerdo a las recomendaciones de ingesta diaria establecidas en el rótulo. El consumo de suplementos dietarios no reemplaza una dieta variada y equilibrada. Indicado para personas que realizan ejercicio físico. Su consumo debe realizarse bajo control médico. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C.",
     descripcionSecundaria: "Suplemento dietario a base de magnesio en cápsulas. Libre de gluten. Sin T.A.C.C. Contiene 60 cápsulas.",
-    imagen: "img/pancakes.webp"
+    imagen: "img/CITRATONEW.webp"
     },
 
     {
@@ -775,6 +775,7 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
 
 
