@@ -583,14 +583,22 @@ function quickAddToCart(index) {
 // COMPRAR AHORA
 // ========================================
 function buyNow() {
-    // Agregar al carrito SIN popup
+    // intentá agregar
+    const before = Object.keys(cart).length;
+
     addToCartFromModal(false);
 
-    closeModal();
+    // si NO cambió el carrito → no cerrar modal
+    const after = Object.keys(cart).length;
 
-    setTimeout(() => {
-        toggleCart(); // solo abre el carrito
-    }, 300);
+    if (before === after) {
+        // no se agregó → falta sabor → quedarse en el modal
+        return;
+    }
+
+    // si cambió → sí cerrar modal y abrir carrito
+    closeModal();
+    setTimeout(() => toggleCart(), 300);
 }
 
 
@@ -783,6 +791,7 @@ document.head.appendChild(style);
 // ========================================
 renderProducts();
 updateCart();
+
 
 
 
