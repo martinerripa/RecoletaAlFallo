@@ -72,7 +72,7 @@ const products = [
     ingredientes: "Ultra Concentrado de Proteína de Suero Lácteo, Aislado de Proteína de Suero Lácteo, Hidrolizado de Proteína de Suero Lácteo, Cacao, ARO: Sabor Chocolate, EDU: Sucralosa (40mg/100cm3), EDU: Potasio Acesulfamo (30mg/100cm3), Col: Caramelo. *El sabor chocolate suizo y cookies and cream tienen cacao. CONTIENE DERIVADOS DE LECHE.",
     advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo o lactancia. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C. Información adicional: Fenilcetonúricos: contiene Fenilalanina.",
     descripcionSecundaria: "Suplemento dietario en polvo dietético para preparar bebida a base de proteínas de suero. 3KG | 100 SERV. | 25GR DE PROTEÍNA POR SERVICIO.",
-    imagen: "img/PWP-3KG-Chocolate.webp"
+    imagen: "img/PROTEINA3KG.webp"
     },
     
     {
@@ -100,7 +100,7 @@ const products = [
     ingredientes: "L-Leucina, L-Glutamina, L-Citrulina Malato, Ácido Cítrico, L-Valina, L-Isoleucina, Sodio Citrato, ARO: sabor *según corresponda, Cloruro de Potasio, Ácido Málico, Cloruro de Sodio, EDU: Sucralosa (27mg/100cm3), EDU: Potasio Acesulfamo (10mg/100cm3), Colorante, Vitamina B6 (Piridoxina).",
     advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo, lactancia ni en niños. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C.",
     descripcionSecundaria: "Suplemento dietario en polvo dietético para preparar bebida a base de aminoácidos. 270G | 20 SERV. | REPLENISHES ELECTROLYTES",
-    imagen: "img/MtorBCAA-270-_2.webp"
+    imagen: "img/BECA.webp"
     },
     {
     categoria: "Magnesio", 
@@ -778,6 +778,7 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
 
 
