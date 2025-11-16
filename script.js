@@ -276,28 +276,6 @@ const products = [
         descripcionSecundaria: "Zinc: Contribuye a la función celular, el sistema inmunológico y la salud muscular.  Magnesio: Ayuda a mejorar la fuerza y la resistencia muscular, facilita el metabolismo y promueve un sueño reparador.  Vitamina B6: Ayuda a mejorar la calidad del sueño y puede contribuir al aumento de la energía. Presentación: 60 cápsulas de 470 mg c/u.",
         imagen: "img/ZMAENA.webp"
     },
-
-    {
-        categoria: "Combo",
-        nombre: "Creatina + Proteína",
-        precio: 59900,
-        descripcionSecundaria: "1 PROTEÍNA + 1 CREATINA",
-        imagen: "img/combo1.jpg"
-    },
-    {
-        categoria: "Combo",
-        nombre: "Creatina x 3",
-        precio: 69900,
-        descripcionSecundaria: "3 CREATINAS 300G",
-        imagen: "img/combo2.jpg"
-    },
-    {
-        categoria: "Combo",
-        nombre: "2 Creatinas + 2 Proteínas",
-        precio: 115900,
-        descripcionSecundaria: "2 PROTEÍNAS + 2 CREATINAS",
-        imagen: "img/combo3.png"
-    },
     
     {
         categoria: "Creatina y Fuerza",
@@ -792,6 +770,7 @@ document.head.appendChild(style);
 // ========================================
 renderProducts();
 updateCart();
+
 
 
 
