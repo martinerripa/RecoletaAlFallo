@@ -21,6 +21,58 @@ const products = [
         descripcionSecundaria: "2 LIBRAS | 30 SERV. | 25GR DE PROTEÍNA X SERV.",
         imagen: "img/proteina.jpg"
     },
+    
+    {
+        categoria: "Magnesio",
+        nombre: "Citrato de Magnesio Sin Sabor - Polvo 500 Gr",
+        precio: 23900,
+        sinStock: [],
+        descripcionPrincipal: "El Citrato de Magnesio ayuda a tener un descanso reparador y reducir la fatiga, relaja los músculos para su mejor recuperación y tiene un efecto regulador de la función intestinal.",
+        modoUso: "Consumir 1 porción diaria (3.5 gramos) o como lo indique su médico.",
+        ingredientes: "Citrato de Magnesio.",
+        advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o nutricionista. No consumir en caso de embarazo, mujeres en periodo de lactancia ni en niños. Consumir este producto de acuerdo a las recomendaciones de ingesta diaria establecidas en el rótulo. El consumo de suplementos dietarios no reemplaza una dieta variada y equilibrada. Indicado para personas que realizan ejercicio físico. Su consumo debe realizarse bajo control médico. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C.",
+        descripcionSecundaria: "Suplemento dietario a base de magnesio en polvo. Libre de gluten. Sin T.A.C.C. 500 Gr. 142 servicios.",
+        imagen: "img/MAGNESIO500GR.webp"
+    },
+    
+    {
+        categoria: "Pancakes",
+        nombre: "Pancakes Proteicos sabor Chocolate",
+        precio: 12000,
+        sinStock: [],
+        descripcionPrincipal: "¿QUÉ SON LOS PANCAKES PROTEICOS? Son pancakes estilo americano que hacen de tus desayunos y meriendas algo totalmente irresistible. Una opción deliciosa, nutritiva y libre de gluten, pensada para acompañar un estilo de vida saludable y activo.",
+        modoUso: "¿CÓMO SE PREPARAN? Colocar dos cucharadas soperas del producto (25 g) y 30 ml de agua o leche en un recipiente. Mezclar con tenedor. Cocinar en sartén precalentada y rociada con aceite a fuego medio aproximadamente 1,5 minutos por lado. TIP: Probálos calientes y fríos. Combinálos con pasta de maní, miel, frutos secos o con tus frutas preferidas.",
+        ingredientes: "Harina de avena libre de gluten, clara de huevo, leche descremada, polvo para hornear, cacao puro.",
+        advertencias: "El consumo de suplementos deportivos no reemplaza una dieta variada y equilibrada.",
+        descripcionSecundaria: "Doypack de 400 g, con cierre hermético para su excelente conservación. Sabores disponibles: chocolate y vainilla. Producto 100% libre de gluten. Cada paquete rinde 16 pancakes.",
+        imagen: "img/PANCAKESCH.webp"
+    },
+    {
+        categoria: "Pancakes",
+        nombre: "Protein Bar",
+        precio: 24900,
+        sabores: ["Chocolate"],
+        sinStock: [],
+        descripcionPrincipal: "ENA PROTEIN BAR es un alimento que proporciona una combinación de carbohidratos y proteínas (2:1), una opción ideal para optimizar el rendimiento deportivo y obtener energía sostenida durante todo el día, previniendo la fatiga durante el ejercicio y acelerando la recuperación post-entrenamiento.",
+        modoUso: "Consumir antes o después del entrenamiento o en cualquier momento del día. Práctica y fácil de transportar, es el snack ideal para acompañar tu rutina diaria.",
+        ingredientes: "Jarabe de glucosa, jarabe de maíz de alta fructosa, proteína aislada de soja, proteínas concentradas de suero, baño de chocolate semiamargo (emulsionantes: INS 322, INS 442, INS 476, aromatizante natural vainilla), proteína texturizada de soja, aceite de girasol, grasa bovina refinada, maltodextrina, cacao en polvo, crispín de cereal, sorbitol (HUM), aromatizantes/saborizantes. CONTIENE: trigo, avena, sulfitos, derivados de leche, soja, maní y trazas de huevo. Puede contener derivados de cebada.",
+        advertencias: "Edad mínima recomendada: 18 años. No apto para personas con intolerancia a la lactosa. Contiene gluten y lactosa. No es vegano. Consultar a un profesional de la salud antes de usar si existe alguna condición médica preexistente. Mantener en un lugar fresco y seco, fuera del alcance de los niños.",
+        descripcionSecundaria: "Barra de proteína. Favorece el desarrollo muscular. Para consumir en cualquier momento y lugar.",
+        imagen: "img/PROTEINBAR.webp"
+    },
+
+    {
+        nombre: "Enargy Gel+ Con Cafeína",
+        precio: 13900,
+        sabores: ["Vainilla"],
+        sinStock: [],
+        descripcionPrincipal: "- Aporta energía \"en movimiento\". Ideal para trabajos aeróbicos. Con sales de rehidratación y antioxidantes. Energy Gel fue creado para optimizar el consumo de nutrientes de manera conveniente, portable y con ricos sabores. Para consumirlo cortá la parte superior del pack e ingerilo por completo.",
+        modoUso: "Se puede tomar 1 Energy Gel+ 15 minutos antes de la actividad física y otro 45 minutos después de haber comenzado para mantener un suministro constante de energía. También se puede consumir en entretiempos o pausas. Para ingerirlo, cortar la parte superior del pack y consumir directamente.",
+        ingredientes: "Jarabe de maíz de alta fructuosa, jarabe de glucosa, glutamina, citrato de magnesio, extracto seco de ginseng (Eleutherococcus senticosus, raíces), cloruro de sodio, cafeína, taurina, vitamina C, vitamina E, cloruro de potasio, citrato de sodio (ACREG), benzoato de sodio (CONS), sorbato de potasio (CONS), ácido cítrico (ACI), carragenina (ESP), aromatizantes. Puede contener derivados de leche y soja.",
+        advertencias: "No debe ser consumido por diabéticos. Consulte a su médico y/o farmacéutico. No consumir en caso de embarazo o lactancia. Menores de 18 años solo bajo supervisión de un adulto o profesional. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores de 25°C.",
+        descripcionSecundaria: "Gel energético con cafeína. Ideal antes o durante la actividad física. Aporta energía \"en movimiento\".",
+        imagen: "img/GEL.webp"
+    },
 
     {
         categoria: "Creatina",
@@ -775,6 +827,7 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
 
 
