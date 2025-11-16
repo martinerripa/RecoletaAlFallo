@@ -72,7 +72,7 @@ const products = [
     ingredientes: "Ultra Concentrado de Proteína de Suero Lácteo, Aislado de Proteína de Suero Lácteo, Hidrolizado de Proteína de Suero Lácteo, Cacao, ARO: Sabor Chocolate, EDU: Sucralosa (40mg/100cm3), EDU: Potasio Acesulfamo (30mg/100cm3), Col: Caramelo. *El sabor chocolate suizo y cookies and cream tienen cacao. CONTIENE DERIVADOS DE LECHE.",
     advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo o lactancia. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C. Información adicional: Fenilcetonúricos: contiene Fenilalanina.",
     descripcionSecundaria: "Suplemento dietario en polvo dietético para preparar bebida a base de proteínas de suero. 3KG | 100 SERV. | 25GR DE PROTEÍNA POR SERVICIO.",
-    imagen: "img/pancakes.webp"
+    imagen: "img/PWP-3KG-Chocolate.webp"
     },
     
     {
@@ -86,7 +86,7 @@ const products = [
     ingredientes: "Beta Alanina, Creatina Nitrato, Arginina alfaketoglutarato, Taurina, L-Tirosina micronizada, Dióxido de Silicio, Ácido Málico, Ácido Cítrico, Vitamina C (Ácido Ascórbico), ARO: sabor *según corresponda, Polidextrosa, Silicato de Calcio, Cafeína Anhidra, EDU Sucralosa (12,8mg/100cm3), EDU: Potasio Acesulfamo (12,4mg/100cm3), Niacinamida, Colorante, Vitamina B6 (Piridoxina), Ácido Fólico, Vitamina B12 (cianocobalamina).",
     advertencias: "Producto para adultos sanos mayores de 18 años. Consultar a un médico si se está bajo medicación. No consumir en caso de alta o baja presión, arritmia, problemas cardíacos, hepáticos, renales, tiroideos, enfermedades psiquiátricas, diabetes o problemas de próstata. No consumir en embarazo, lactancia, niños o adultos mayores. No mezclar con alcohol ni energizantes. Nunca exceder 2 porciones en 24 hs ni usar más de 5 días a la semana. La beta alanina puede generar hormigueo. Mantener en lugar fresco y seco. Fenilcetonúricos: contiene fenilalanina.",
     descripcionSecundaria: "Polvo para preparar bebida analcohólica dietética con cafeína y taurina suplementada con vitaminas. 240 GRAMOS | 30 SERV. | SUPERIOR PERFORMANCE",
-    imagen: "img/pancakes.webp"
+    imagen: "img/TNTDynamite-acai.webp"
     },
     
     {
@@ -100,7 +100,7 @@ const products = [
     ingredientes: "L-Leucina, L-Glutamina, L-Citrulina Malato, Ácido Cítrico, L-Valina, L-Isoleucina, Sodio Citrato, ARO: sabor *según corresponda, Cloruro de Potasio, Ácido Málico, Cloruro de Sodio, EDU: Sucralosa (27mg/100cm3), EDU: Potasio Acesulfamo (10mg/100cm3), Colorante, Vitamina B6 (Piridoxina).",
     advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo, lactancia ni en niños. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C.",
     descripcionSecundaria: "Suplemento dietario en polvo dietético para preparar bebida a base de aminoácidos. 270G | 20 SERV. | REPLENISHES ELECTROLYTES",
-    imagen: "img/pancakes.webp"
+    imagen: "img/MtorBCAA-270-_2.webp"
     },
     {
     categoria: "Magnesio", 
@@ -127,7 +127,7 @@ const products = [
     ingredientes: "Calcio Beta-Hidroxi, Beta-Metilbutarato Monohidrato, Dióxido de Silicio.",
     advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo, lactancia ni en niños. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C.",
     descripcionSecundaria: "Suplemento dietario a base de Calcio Beta-Hidroxi Beta-Metilbutarato Monohidrato en cápsulas. 180 CÁPSULAS | 90 SERV. | HMB 1G POR PORCIÓN. Strength and Recovery.",
-    imagen: "img/pancakes.webp"
+    imagen: "img/HMB.webp"
     },
     {
     categoria: "Proteina",
@@ -140,7 +140,7 @@ const products = [
     ingredientes: "",
     advertencias: "",
     descripcionSecundaria: "",
-    imagen: "img/pancakes.webp"
+    imagen: "img/JustPlantProteinNEWSF.webp"
     },
     {
         categoria: "Preentreno",
@@ -778,6 +778,7 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
 
 
