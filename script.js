@@ -348,6 +348,7 @@ const products = [
 let cart = {};
 let currentProduct = null;
 let selectedFlavor = "";
+let selectedQuantity = 1; // ← AGREGAR ESTA LÍNEA
 
 // ========================================
 // RENDERIZAR PRODUCTOS
@@ -388,6 +389,7 @@ function renderProducts() {
 function openProduct(index) {
     currentProduct = products[index];
     selectedFlavor = "";
+    selectedQuantity = 1; // ← Resetear cantidad
     
     const modal = document.getElementById("productModal");
     document.getElementById("modalImage").src = currentProduct.imagen;
@@ -414,7 +416,21 @@ function openProduct(index) {
         flavorSelector.innerHTML = "";
     }
     
-    // Modo de uso, ingredientes, advertencias
+    // ← NUEVO: Selector de cantidad
+    const quantityHTML = `
+        <div class="quantity-selector">
+            <label>Cantidad</label>
+            <div class="quantity-controls">
+                <button class="qty-btn-modal" onclick="changeQuantity(-1)">-</button>
+                <span id="modalQuantity" class="quantity-display">1</span>
+                <button class="qty-btn-modal" onclick="changeQuantity(1)">+</button>
+            </div>
+        </div>
+    `;
+    
+    // Insertar selector de cantidad después del selector de sabores
+    flavorSelector.insertAdjacentHTML('afterend', quantityHTML);
+    
     document.getElementById("modalModoUso").textContent = currentProduct.modoUso;
     document.getElementById("modalIngredientes").textContent = currentProduct.ingredientes;
     document.getElementById("modalAdvertencias").textContent = currentProduct.advertencias;
@@ -423,7 +439,6 @@ function openProduct(index) {
     document.getElementById("ingredientesSection").style.display = currentProduct.ingredientes ? "block" : "none";
     document.getElementById("advertenciasSection").style.display = currentProduct.advertencias ? "block" : "none";
     
-    // Descripción completa
     const fullDesc = document.getElementById("modalFullDescription");
     if (currentProduct.descripcionPrincipal) {
         document.getElementById("modalDescTitle").textContent = currentProduct.nombre;
@@ -436,6 +451,14 @@ function openProduct(index) {
     
     modal.classList.add("active");
     document.body.style.overflow = "hidden";
+}
+
+// ========================================
+// CAMBIAR CANTIDAD EN MODAL
+// ========================================
+function changeQuantity(change) {
+    selectedQuantity = Math.max(1, selectedQuantity + change);
+    document.getElementById("modalQuantity").textContent = selectedQuantity;
 }
 
 // ========================================
@@ -472,16 +495,60 @@ function addToCartFromModal() {
         : currentProduct.nombre;
     
     if (cart[productName]) {
-        cart[productName].quantity++;
+        cart[productName].quantity += selectedQuantity;
     } else {
         cart[productName] = {
             price: currentProduct.precio,
-            quantity: 1
+            quantity: selectedQuantity,
+            image: currentProduct.imagen
         };
     }
     
     updateCart();
-    showNotification("✓ Producto agregado al carrito");
+    showAddedToCartPopup(productName, selectedQuantity);
+}
+
+// ========================================
+// MOSTRAR POPUP AÑADIDO AL CARRITO
+// ========================================
+function showAddedToCartPopup(productName, quantity) {
+    // Remover popup anterior si existe
+    const existingPopup = document.getElementById("addedToCartPopup");
+    if (existingPopup) existingPopup.remove();
+    
+    const popup = document.createElement("div");
+    popup.id = "addedToCartPopup";
+    popup.className = "added-to-cart-popup";
+    popup.innerHTML = `
+        <div class="popup-content">
+            <div class="popup-check">✓</div>
+            <div class="popup-message">Añadido al carrito</div>
+            <div class="popup-product-info">
+                <strong>${quantity}x</strong> ${productName}
+            </div>
+            <div class="popup-buttons">
+                <button class="popup-btn-secondary" onclick="closeAddedPopup()">Seguir comprando</button>
+                <button class="popup-btn-primary" onclick="closeAddedPopup(); toggleCart();">Ver carrito</button>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(popup);
+    
+    // Auto cerrar después de 5 segundos
+    setTimeout(() => {
+        if (document.getElementById("addedToCartPopup")) {
+            closeAddedPopup();
+        }
+    }, 5000);
+}
+
+function closeAddedPopup() {
+    const popup = document.getElementById("addedToCartPopup");
+    if (popup) {
+        popup.classList.add("fade-out");
+        setTimeout(() => popup.remove(), 300);
+    }
 }
 
 // ========================================
@@ -703,6 +770,7 @@ document.head.appendChild(style);
 // ========================================
 renderProducts();
 updateCart();
+
 
 
 
