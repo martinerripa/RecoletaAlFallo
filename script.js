@@ -347,7 +347,7 @@ const products = [
         ingredientes: "Creatina monohidrato, citrato de sodio, magnesio sulfato, cloruro de sodio, cloruro de potasio, ácido cítrico anhidro (ACI), aromatizantes, carmín (COL), sucralosa (370 mg/100 g) (EDU), amarillo ocaso FCF (COL). CONTENIDO: Puede contener derivados de leche y soja.",
         advertencias: "No utilizar en caso de embarazo o lactancia. Mantener fuera del alcance de los niños. Este suplemento no reemplaza una dieta equilibrada. Consultar con un profesional antes de su uso.",
         descripcionSecundaria: "Creatina + electrolitos en polvo. Favorece el crecimiento y desarrollo muscular.",
-        imagen: "img/CREAYELE.webp"
+        imagen: "img/CREAYELEC.webp"
     },
     
     {
@@ -871,6 +871,7 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
 
 
