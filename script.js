@@ -91,7 +91,6 @@ const products = [
         categoria: "Creatina",
         nombre: "Creatina Monohidrato 300g Doypack",
         precio: 24900,
-        sabores: [],
         sinStock: [], 
         descripcionPrincipal: "La creatina micronizada es la unión de tres aminoácidos que ofrece mayores ventajas que la creatina normal, mejorando su asimilación.\n\nLa creatina monohidratado es recomendada durante un plan de entrenamiento para aumentar la fuerza, resistencia y recuperación.",
         modoUso: "Durante los primeros 4 días, consumir 4 porciones diarias, y los días siguientes consumir una o dos porciones diarias preferentemente con el estómago vacío.",
@@ -104,7 +103,6 @@ const products = [
         categoria: "Pancakes",
         nombre: "Pancakes Proteicos sabor vainilla",
         precio: 12000,
-        sabores: [],
         sinStock: [], 
         descripcionPrincipal: "¿QUÉ SON LOS PANCAKES PROTEICOS? Son pancakes estilo americano que hacen de tus desayunos y meriendas algo totalmente irresistible. Una opción deliciosa, nutritiva y LIBRE DE GLUTEN, pensada para acompañar un estilo de vida saludable y activo",
         modoUso: "¿CÓMO SE PREPARAN? Colocar dos cucharadas soperas del producto (25 g) y 30 ml de agua o leche en un recipiente. Mezclar con tenedor. Cocinar a sartén precalentada y rociada con aceite a fuego medio aproximadamente 1,5 minutos por lado",
@@ -114,82 +112,82 @@ const products = [
         imagen: "img/pancakes.webp"
     },
     {
-    categoria: "Proteinas",
-    nombre: "Platinum Whey Protein 3Kg - Vainilla",
-    precio: 116900,
-    sabores: ["Vainilla"],
-    sinStock: [], 
-    descripcionPrincipal: "Compuesta por ultra concentrado, aislado e hidrolizado de suero de máxima pureza, obtenidos por métodos no agresivos que garantizan la calidad y estabilidad del producto. Su agradable sabor y alta disolución lo convierten en la opción inteligente a la hora de agregar proteínas de alto valor biológico a nuestra dieta, o como parte de un programa nutricional deportivo. 100% NATURAL GRASS FED PROTEIN. Fuente natural de aminoácidos esenciales, aminoácidos de cadena ramificada y Glutamina.",
-    modoUso: "Mezclar 1 medida de Platinum Whey Protein en 200 cm3 de agua o leche descremada. Consumir 1 hora antes del entrenamiento, luego del mismo o en cualquier momento del día para alcanzar tus necesidades proteicas.",
-    ingredientes: "Ultra Concentrado de Proteína de Suero Lácteo, Aislado de Proteína de Suero Lácteo, Hidrolizado de Proteína de Suero Lácteo, Cacao, ARO: Sabor Chocolate, EDU: Sucralosa (40mg/100cm3), EDU: Potasio Acesulfamo (30mg/100cm3), Col: Caramelo. *El sabor chocolate suizo y cookies and cream tienen cacao. CONTIENE DERIVADOS DE LECHE.",
-    advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo o lactancia. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C. Información adicional: Fenilcetonúricos: contiene Fenilalanina.",
-    descripcionSecundaria: "Suplemento dietario en polvo dietético para preparar bebida a base de proteínas de suero. 3KG | 100 SERV. | 25GR DE PROTEÍNA POR SERVICIO.",
-    imagen: "img/PROTEINA3KG.webp"
+        categoria: "Proteinas",
+        nombre: "Platinum Whey Protein 3Kg - Vainilla",
+        precio: 116900,
+        sabores: ["Vainilla"],
+        sinStock: [], 
+        descripcionPrincipal: "Compuesta por ultra concentrado, aislado e hidrolizado de suero de máxima pureza, obtenidos por métodos no agresivos que garantizan la calidad y estabilidad del producto. Su agradable sabor y alta disolución lo convierten en la opción inteligente a la hora de agregar proteínas de alto valor biológico a nuestra dieta, o como parte de un programa nutricional deportivo. 100% NATURAL GRASS FED PROTEIN. Fuente natural de aminoácidos esenciales, aminoácidos de cadena ramificada y Glutamina.",
+        modoUso: "Mezclar 1 medida de Platinum Whey Protein en 200 cm3 de agua o leche descremada. Consumir 1 hora antes del entrenamiento, luego del mismo o en cualquier momento del día para alcanzar tus necesidades proteicas.",
+        ingredientes: "Ultra Concentrado de Proteína de Suero Lácteo, Aislado de Proteína de Suero Lácteo, Hidrolizado de Proteína de Suero Lácteo, Cacao, ARO: Sabor Chocolate, EDU: Sucralosa (40mg/100cm3), EDU: Potasio Acesulfamo (30mg/100cm3), Col: Caramelo. *El sabor chocolate suizo y cookies and cream tienen cacao. CONTIENE DERIVADOS DE LECHE.",
+        advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo o lactancia. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C. Información adicional: Fenilcetonúricos: contiene Fenilalanina.",
+        descripcionSecundaria: "Suplemento dietario en polvo dietético para preparar bebida a base de proteínas de suero. 3KG | 100 SERV. | 25GR DE PROTEÍNA POR SERVICIO.",
+        imagen: "img/PROTEINA3KG.webp"
     },
     
     {
-    categoria: "Preentreno",
-    nombre: "TNT-Dynamite 240g",
-    precio: 19600,
-    sabores: ["Grape 🍇", "Açaí"],
-    sinStock: [],
-    descripcionPrincipal: "",
-    modoUso: "Diluir 1 medida colmada (8g) en 500cm3 de agua fría una vez al día. Consumir 15 a 30 minutos antes del entrenamiento o la competencia. No consumir más de 2 porciones diarias.",
-    ingredientes: "Beta Alanina, Creatina Nitrato, Arginina alfaketoglutarato, Taurina, L-Tirosina micronizada, Dióxido de Silicio, Ácido Málico, Ácido Cítrico, Vitamina C (Ácido Ascórbico), ARO: sabor *según corresponda, Polidextrosa, Silicato de Calcio, Cafeína Anhidra, EDU Sucralosa (12,8mg/100cm3), EDU: Potasio Acesulfamo (12,4mg/100cm3), Niacinamida, Colorante, Vitamina B6 (Piridoxina), Ácido Fólico, Vitamina B12 (cianocobalamina).",
-    advertencias: "Producto para adultos sanos mayores de 18 años. Consultar a un médico si se está bajo medicación. No consumir en caso de alta o baja presión, arritmia, problemas cardíacos, hepáticos, renales, tiroideos, enfermedades psiquiátricas, diabetes o problemas de próstata. No consumir en embarazo, lactancia, niños o adultos mayores. No mezclar con alcohol ni energizantes. Nunca exceder 2 porciones en 24 hs ni usar más de 5 días a la semana. La beta alanina puede generar hormigueo. Mantener en lugar fresco y seco. Fenilcetonúricos: contiene fenilalanina.",
-    descripcionSecundaria: "Polvo para preparar bebida analcohólica dietética con cafeína y taurina suplementada con vitaminas. 240 GRAMOS | 30 SERV. | SUPERIOR PERFORMANCE",
-    imagen: "img/TNTDynamite-acai.webp"
+        categoria: "Preentreno",
+        nombre: "TNT-Dynamite 240g",
+        precio: 19600,
+        sabores: ["Grape 🍇", "Açaí"],
+        sinStock: [],
+        descripcionPrincipal: "",
+        modoUso: "Diluir 1 medida colmada (8g) en 500cm3 de agua fría una vez al día. Consumir 15 a 30 minutos antes del entrenamiento o la competencia. No consumir más de 2 porciones diarias.",
+        ingredientes: "Beta Alanina, Creatina Nitrato, Arginina alfaketoglutarato, Taurina, L-Tirosina micronizada, Dióxido de Silicio, Ácido Málico, Ácido Cítrico, Vitamina C (Ácido Ascórbico), ARO: sabor *según corresponda, Polidextrosa, Silicato de Calcio, Cafeína Anhidra, EDU Sucralosa (12,8mg/100cm3), EDU: Potasio Acesulfamo (12,4mg/100cm3), Niacinamida, Colorante, Vitamina B6 (Piridoxina), Ácido Fólico, Vitamina B12 (cianocobalamina).",
+        advertencias: "Producto para adultos sanos mayores de 18 años. Consultar a un médico si se está bajo medicación. No consumir en caso de alta o baja presión, arritmia, problemas cardíacos, hepáticos, renales, tiroideos, enfermedades psiquiátricas, diabetes o problemas de próstata. No consumir en embarazo, lactancia, niños o adultos mayores. No mezclar con alcohol ni energizantes. Nunca exceder 2 porciones en 24 hs ni usar más de 5 días a la semana. La beta alanina puede generar hormigueo. Mantener en lugar fresco y seco. Fenilcetonúricos: contiene fenilalanina.",
+        descripcionSecundaria: "Polvo para preparar bebida analcohólica dietética con cafeína y taurina suplementada con vitaminas. 240 GRAMOS | 30 SERV. | SUPERIOR PERFORMANCE",
+        imagen: "img/TNTDynamite-acai.webp"
     },
     
     {
-    categoria: "Aminoácidos",
-    nombre: "Mtor BCAA 270g",
-    precio: 23400,
-    sabores: ["Fruit Punch"],
-    sinStock: [],
-    descripcionPrincipal: "",
-    modoUso: "Como suplemento dietario mezclar 1 porción (13,5g / 1 scoop) en 500cm3 de agua fría (ajustar la porción a su preferencia). En los días de entrenamiento consumir 1 porción durante el entrenamiento y 1 porción luego del mismo. En los días en los que no hay entrenamiento consumir 1 porción al día. Para mejores resultados consumir diariamente.",
-    ingredientes: "L-Leucina, L-Glutamina, L-Citrulina Malato, Ácido Cítrico, L-Valina, L-Isoleucina, Sodio Citrato, ARO: sabor *según corresponda, Cloruro de Potasio, Ácido Málico, Cloruro de Sodio, EDU: Sucralosa (27mg/100cm3), EDU: Potasio Acesulfamo (10mg/100cm3), Colorante, Vitamina B6 (Piridoxina).",
-    advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo, lactancia ni en niños. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C.",
-    descripcionSecundaria: "Suplemento dietario en polvo dietético para preparar bebida a base de aminoácidos. 270G | 20 SERV. | REPLENISHES ELECTROLYTES",
-    imagen: "img/BECA.webp"
+        categoria: "Aminoácidos",
+        nombre: "Mtor BCAA 270g",
+        precio: 23400,
+        sabores: ["Fruit Punch"],
+        sinStock: [],
+        descripcionPrincipal: "",
+        modoUso: "Como suplemento dietario mezclar 1 porción (13,5g / 1 scoop) en 500cm3 de agua fría (ajustar la porción a su preferencia). En los días de entrenamiento consumir 1 porción durante el entrenamiento y 1 porción luego del mismo. En los días en los que no hay entrenamiento consumir 1 porción al día. Para mejores resultados consumir diariamente.",
+        ingredientes: "L-Leucina, L-Glutamina, L-Citrulina Malato, Ácido Cítrico, L-Valina, L-Isoleucina, Sodio Citrato, ARO: sabor *según corresponda, Cloruro de Potasio, Ácido Málico, Cloruro de Sodio, EDU: Sucralosa (27mg/100cm3), EDU: Potasio Acesulfamo (10mg/100cm3), Colorante, Vitamina B6 (Piridoxina).",
+        advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo, lactancia ni en niños. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C.",
+        descripcionSecundaria: "Suplemento dietario en polvo dietético para preparar bebida a base de aminoácidos. 270G | 20 SERV. | REPLENISHES ELECTROLYTES",
+        imagen: "img/BECA.webp"
     },
     {
-    categoria: "Magnesio", 
-    nombre: "Citrato de Magnesio - 60 Cápsulas",
-    precio: 13900,
-    sinStock: [],
-    descripcionPrincipal: "El Citrato de Magnesio ayuda a tener un descanso reparador y reducir la fatiga, relaja los músculos para su mejor recuperación y tiene un efecto regulador de la función intestinal.",
-    modoUso: "Consumir 1 porción diaria (2 cápsulas) o como lo indique su médico.",
-    ingredientes: "Citrato de Magnesio.",
-    advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o nutricionista. No consumir en caso de embarazo, mujeres en periodo de lactancia ni en niños. Consumir este producto de acuerdo a las recomendaciones de ingesta diaria establecidas en el rótulo. El consumo de suplementos dietarios no reemplaza una dieta variada y equilibrada. Indicado para personas que realizan ejercicio físico. Su consumo debe realizarse bajo control médico. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C.",
-    descripcionSecundaria: "Suplemento dietario a base de magnesio en cápsulas. Libre de gluten. Sin T.A.C.C. Contiene 60 cápsulas.",
-    imagen: "img/CITRATONEW.webp"
+        categoria: "Magnesio", 
+        nombre: "Citrato de Magnesio - 60 Cápsulas",
+        precio: 13900,
+        sinStock: [],
+        descripcionPrincipal: "El Citrato de Magnesio ayuda a tener un descanso reparador y reducir la fatiga, relaja los músculos para su mejor recuperación y tiene un efecto regulador de la función intestinal.",
+        modoUso: "Consumir 1 porción diaria (2 cápsulas) o como lo indique su médico.",
+        ingredientes: "Citrato de Magnesio.",
+        advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o nutricionista. No consumir en caso de embarazo, mujeres en periodo de lactancia ni en niños. Consumir este producto de acuerdo a las recomendaciones de ingesta diaria establecidas en el rótulo. El consumo de suplementos dietarios no reemplaza una dieta variada y equilibrada. Indicado para personas que realizan ejercicio físico. Su consumo debe realizarse bajo control médico. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C.",
+        descripcionSecundaria: "Suplemento dietario a base de magnesio en cápsulas. Libre de gluten. Sin T.A.C.C. Contiene 60 cápsulas.",
+        imagen: "img/CITRATONEW.webp"
     },
 
     {
-    categoria: "",
-    nombre: "HMB - 180 Cápsulas",
-    precio: 24900,
-    sinStock: [],
-    descripcionPrincipal: "",
-    modoUso: "Como suplemento dietario consumir 2 cápsulas 3 veces al día, junto con las comidas que contengan proteína. Recomendación: se recomienda su uso con Creatine Monohydrate y Beta-Alanine.",
-    ingredientes: "Calcio Beta-Hidroxi, Beta-Metilbutarato Monohidrato, Dióxido de Silicio.",
-    advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo, lactancia ni en niños. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C.",
-    descripcionSecundaria: "Suplemento dietario a base de Calcio Beta-Hidroxi Beta-Metilbutarato Monohidrato en cápsulas. 180 CÁPSULAS | 90 SERV. | HMB 1G POR PORCIÓN. Strength and Recovery.",
-    imagen: "img/HMB.webp"
+        categoria: "",
+        nombre: "HMB - 180 Cápsulas",
+        precio: 24900,
+        sinStock: [],
+        descripcionPrincipal: "",
+        modoUso: "Como suplemento dietario consumir 2 cápsulas 3 veces al día, junto con las comidas que contengan proteína. Recomendación: se recomienda su uso con Creatine Monohydrate y Beta-Alanine.",
+        ingredientes: "Calcio Beta-Hidroxi, Beta-Metilbutarato Monohidrato, Dióxido de Silicio.",
+        advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo, lactancia ni en niños. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C.",
+        descripcionSecundaria: "Suplemento dietario a base de Calcio Beta-Hidroxi Beta-Metilbutarato Monohidrato en cápsulas. 180 CÁPSULAS | 90 SERV. | HMB 1G POR PORCIÓN. Strength and Recovery.",
+        imagen: "img/HMB.webp"
     },
     {
-    categoria: "Proteina",
-    nombre: "Just Plant Protein 2 Lb",
-    precio: 39900,
-    sinStock: [],
-    descripcionPrincipal: "Just Plant es una proteína a base de aislado de proteína de arveja. Es 100% vegana, keto y libre de gluten.",
-    modoUso: "Es ideal para sumar proteínas de alto valor biológico a tus recetas favoritas o como ingrediente principal en tus batidos proteicos.",
-    ingredientes: "",
-    advertencias: "",
-    descripcionSecundaria: "",
-    imagen: "img/JustPlantProteinNEWSF.webp"
+        categoria: "Proteina",
+        nombre: "Just Plant Protein 2 Lb",
+        precio: 39900,
+        sinStock: [],
+        descripcionPrincipal: "Just Plant es una proteína a base de aislado de proteína de arveja. Es 100% vegana, keto y libre de gluten.",
+        modoUso: "Es ideal para sumar proteínas de alto valor biológico a tus recetas favoritas o como ingrediente principal en tus batidos proteicos.",
+        ingredientes: "",
+        advertencias: "",
+        descripcionSecundaria: "",
+        imagen: "img/JustPlantProteinNEWSF.webp"
     },
     {
         categoria: "Preentreno",
@@ -210,7 +208,6 @@ const products = [
         categoria: "Vitaminas",
         nombre: "All in One Multivitamin - 60 Cápsulas",
         precio: 17420,
-        sabores: [],
         sinStock: [], 
         descripcionPrincipal: "Complejo multivitamínico completo con 23 vitaminas y minerales esenciales para apoyar tu salud general y rendimiento deportivo.\n\nFórmula balanceada que cubre todas tus necesidades nutricionales diarias.",
         modoUso: "Tomar 1 comprimido diariamente con las comidas.",
@@ -315,29 +312,76 @@ const products = [
     },
 
     {
-    categoria: "Combo",
-    nombre: "Creatina + Proteína",
-    precio: 59900,
-    sinStock: [],
-    descripcionSecundaria: "1 PROTEÍNA + 1 CREATINA",
-    imagen: "img/combo1.jpg"
+        categoria: "Combo",
+        nombre: "Creatina + Proteína",
+        precio: 59900,
+        sinStock: [],
+        descripcionSecundaria: "1 PROTEÍNA + 1 CREATINA",
+        imagen: "img/combo1.jpg"
     },
     {
-    categoria: "Combo",
-    nombre: "Creatina x 3",
-    precio: 69900,
-    sinStock: [],
-    descripcionSecundaria: "3 CREATINAS 300G",
-    imagen: "img/combo2.jpg"
+        categoria: "Combo",
+        nombre: "Creatina x 3",
+        precio: 69900,
+        sinStock: [],
+        descripcionSecundaria: "3 CREATINAS 300G",
+        imagen: "img/combo2.jpg"
     },
     {
-    categoria: "Combo",
-    nombre: "2 Creatinas + 2 Proteínas",
-    precio: 115900,
-    sinStock: [],
-    descripcionSecundaria: "2 PROTEÍNAS + 2 CREATINAS",
-    imagen: "img/combo3.png"
-    }
+        categoria: "Combo",
+        nombre: "2 Creatinas + 2 Proteínas",
+        precio: 115900,
+        sinStock: [],
+        descripcionSecundaria: "2 PROTEÍNAS + 2 CREATINAS",
+        imagen: "img/combo3.png"
+    },
+    
+    {
+        categoria: "Creatina y Fuerza",
+        nombre: "Creatina + Electrolitos",
+        precio: 24900,
+        sabores: ["Pink Lemonade", "Blue Lemonade"],
+        sinStock: [],
+        descripcionPrincipal: "Aumenta la fuerza y potencia muscular. Mejora la recuperación. Optimiza la hidratación al reponer sales minerales. Creatina + Electrolitos es una combinación que aporta los beneficios de la creatina y optimiza la hidratación al reponer sales minerales. Su fórmula potencia el entrenamiento y brinda soporte energético sostenido. Aporta 5 g de creatina monohidrato micronizada por porción junto con un blend balanceado de electrolitos (sodio, potasio, magnesio y cloruros), ayudando a sostener la función muscular y evitar calambres, fatiga y falta de sales.",
+        modoUso: "Diluir un scoop en 200 ml de agua.",
+        ingredientes: "Creatina monohidrato, citrato de sodio, magnesio sulfato, cloruro de sodio, cloruro de potasio, ácido cítrico anhidro (ACI), aromatizantes, carmín (COL), sucralosa (370 mg/100 g) (EDU), amarillo ocaso FCF (COL). CONTENIDO: Puede contener derivados de leche y soja.",
+        advertencias: "No utilizar en caso de embarazo o lactancia. Mantener fuera del alcance de los niños. Este suplemento no reemplaza una dieta equilibrada. Consultar con un profesional antes de su uso.",
+        descripcionSecundaria: "Creatina + electrolitos en polvo. Favorece el crecimiento y desarrollo muscular.",
+        imagen: "img/CREAYELE.webp"
+    },
+    
+    {
+        categoria: "Proteina",
+        nombre: "100% Whey Protein",
+        precio: 39600,
+        sabores: ["Vainilla", "Chocolate"],
+        sinStock: [],
+        descripcionPrincipal: "¡TU PROTEÍNA PARA TODOS LOS DÍAS! Complementá tu alimentación con 100% WHEY, una proteína diseñada para tu consumo diario. Ideal para sumar proteínas en desayunos, meriendas o como snack post entreno. Con 20 g de proteína por porción, es una excelente opción para hombres y mujeres físicamente activos. Favorece la síntesis de masa muscular y es rica en BCAA.",
+        modoUso: "Mezclar una porción (scoop) en un shaker ENA con 200 cm³ de agua o leche preferentemente descremada. Agitar bien y consumir en desayunos, meriendas o en cualquier momento del día.",
+        ingredientes: 
+            "Ingredientes comunes: Proteína de suero de leche, maltodextrina, aromatizantes, acesulfame K (EDU), sucralosa (80 mg/100 g) (EDU). Ambos sabores contienen derivados de leche y soja.\n\n" +
+            "Sabor Vainilla: Acesulfame K 90 mg/100 g.\n\n" +
+            "Sabor Chocolate: Acesulfame K 150 mg/100 g, contiene cacao en polvo y colorante caramelo (COL). Contiene sulfitos.",
+        advertencias: "Edad mínima recomendada: 18 años. No apta para personas con intolerancia a la lactosa o alergia a la leche. Consultar a un profesional de la salud si está embarazada, amamantando o tiene condiciones médicas preexistentes. No exceder la dosis recomendada. No reemplaza una alimentación variada y equilibrada.",
+        descripcionSecundaria: "Proteína concentrada en polvo. Para cualquier momento del día: desayunos, meriendas o post entrenamiento. Favorece la síntesis de masa muscular.",
+        imagen: "img/ENAPROTEIN.webp"
+    },
+    {
+        categoria: "Pancakes",
+        nombre: "CRUDDA BAR AVELLANA CHOCOLATE - 10 barritas",
+        precio: 16900,
+        sabores: ["Avellana & Chocolate"],
+        sinStock: [],
+        descripcionPrincipal: "La combinación perfecta para quienes buscan un snack saludable, nutritivo y delicioso. Barra con proteína de arveja, avellana, chocolate y pasta de maní, ideal para consumir en cualquier momento del día. Sin aditivos ni conservantes, con ingredientes naturales y de alta calidad.",
+        modoUso: "Se utiliza como un snack nutritivo para consumir en cualquier momento del día: entre comidas, antes o después de entrenar, o como un gusto saludable.",
+        ingredientes: "Fibra vegetal, pasta de maní, concentrado de proteína de arveja, pasas de uva, harina de maní, baño de chocolate semiamargo, maní, sorbitol, aislado de proteína de soja, quinoa pop (harina de quinoa), avellana, cacao amargo, sal marina, vitaminas A, D2, E y B12. Espesante: goma acacia. Aromatizante: esencia natural de avellanas. Emulsionante: lecitina de girasol. Antioxidante: tocoferoles. CONTIENE: maní, avellana y derivados de soja. PUEDE CONTENER: leche, almendra, castaña de cajú, nuez, sulfitos y coco.",
+        advertencias: "Características principales: sin conservantes ni aditivos artificiales, ricas en proteínas vegetales, fuente de grasas saludables gracias a la avellana y pasta de maní, sabor equilibrado entre dulce y natural. Perfectas para entrenamientos o momentos de energía.",
+        descripcionSecundaria: "",
+        imagen: "img/CRUDA.webp"
+    },
+
+
+
     
 
 ];
@@ -827,6 +871,7 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
 
 
