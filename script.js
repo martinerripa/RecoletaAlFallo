@@ -6,6 +6,7 @@ const products = [
         categoria: "Proteina",
         nombre: "Whey Protein Doypack 2 Lb",
         precio: 39900, 
+         sabores: ["Chocolate, Vainilla, Banana, Frutilla, C&C"],
         descripcionPrincipal: "Compuesta por ultra concentrado, aislado e hidrolizado de suero de máxima pureza, obtenidos por métodos no agresivos que garantizan la calidad y estabilidad del producto.\n\nSu agradable sabor y alta disolución lo convierten en la opción inteligente a la hora de agregar proteínas de alto valor biológico a nuestra dieta, o como parte de un programa nutricional deportivo.\n\n100% NATURAL GRASS FED PROTEIN\n\nFuente natural de aminoácidos esenciales, aminoácidos de cadena ramificada y Glutamina.",
         modoUso: "Mezclar 1 medida de Platinum Whey Protein en 200cm3 de agua o leche descremada. Consumir 1 hora antes del entrenamiento, luego del mismo o simplemente en cualquier momento del día para alcanzar tus necesidades proteicas.",
         ingredientes: "Ultra Concentrado de Proteína de Suero Lácteo, Aislado de Proteína de Suero Lácteo, Hidrolizado de Proteína de Suero Lácteo, Cacao, Saborizante, Edulcorantes.",
@@ -791,6 +792,7 @@ document.head.appendChild(style);
 // ========================================
 renderProducts();
 updateCart();
+
 
 
 
