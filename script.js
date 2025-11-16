@@ -32,7 +32,7 @@ const products = [
         ingredientes: "Citrato de Magnesio.",
         advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o nutricionista. No consumir en caso de embarazo, mujeres en periodo de lactancia ni en niños. Consumir este producto de acuerdo a las recomendaciones de ingesta diaria establecidas en el rótulo. El consumo de suplementos dietarios no reemplaza una dieta variada y equilibrada. Indicado para personas que realizan ejercicio físico. Su consumo debe realizarse bajo control médico. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en un lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C.",
         descripcionSecundaria: "Suplemento dietario a base de magnesio en polvo. Libre de gluten. Sin T.A.C.C. 500 Gr. 142 servicios.",
-        imagen: "img/MAGNESIO500GR.webp"
+        imagen: "img/MAGNESIO500MG.webp"
     },
     
     {
@@ -45,7 +45,7 @@ const products = [
         ingredientes: "Harina de avena libre de gluten, clara de huevo, leche descremada, polvo para hornear, cacao puro.",
         advertencias: "El consumo de suplementos deportivos no reemplaza una dieta variada y equilibrada.",
         descripcionSecundaria: "Doypack de 400 g, con cierre hermético para su excelente conservación. Sabores disponibles: chocolate y vainilla. Producto 100% libre de gluten. Cada paquete rinde 16 pancakes.",
-        imagen: "img/PANCAKESCH.webp"
+        imagen: "img/PANCAKECH.webp"
     },
     {
         categoria: "Pancakes",
@@ -102,7 +102,7 @@ const products = [
     },
     {
         categoria: "Pancakes",
-        nombre: "Pancakes Proteicos",
+        nombre: "Pancakes Proteicos sabor vainilla",
         precio: 12000,
         sabores: [],
         sinStock: [], 
@@ -827,6 +827,7 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
 
 
