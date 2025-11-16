@@ -415,6 +415,10 @@ function openProduct(index) {
     } else {
         flavorSelector.innerHTML = "";
     }
+
+    // ⭐ BORRAR selector de cantidad anterior
+    const oldQty = document.querySelector(".quantity-selector");
+    if (oldQty) oldQty.remove();
     
     // ← NUEVO: Selector de cantidad
     const quantityHTML = `
@@ -770,6 +774,7 @@ document.head.appendChild(style);
 // ========================================
 renderProducts();
 updateCart();
+
 
 
 
