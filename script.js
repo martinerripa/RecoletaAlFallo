@@ -106,7 +106,6 @@ const products = [
     categoria: "Magnesio", 
     nombre: "Citrato de Magnesio - 60 Cápsulas",
     precio: 13900,
-    sabores: ["Sin Sabor"],
     sinStock: [],
     descripcionPrincipal: "El Citrato de Magnesio ayuda a tener un descanso reparador y reducir la fatiga, relaja los músculos para su mejor recuperación y tiene un efecto regulador de la función intestinal.",
     modoUso: "Consumir 1 porción diaria (2 cápsulas) o como lo indique su médico.",
@@ -120,7 +119,6 @@ const products = [
     categoria: "",
     nombre: "HMB - 180 Cápsulas",
     precio: 24900,
-    sabores: ["Sin Sabor"],
     sinStock: [],
     descripcionPrincipal: "",
     modoUso: "Como suplemento dietario consumir 2 cápsulas 3 veces al día, junto con las comidas que contengan proteína. Recomendación: se recomienda su uso con Creatine Monohydrate y Beta-Alanine.",
@@ -133,7 +131,6 @@ const products = [
     categoria: "Proteina",
     nombre: "Just Plant Protein 2 Lb",
     precio: 39900,
-    sabores: ["Sin Sabor"],
     sinStock: [],
     descripcionPrincipal: "Just Plant es una proteína a base de aislado de proteína de arveja. Es 100% vegana, keto y libre de gluten.",
     modoUso: "Es ideal para sumar proteínas de alto valor biológico a tus recetas favoritas o como ingrediente principal en tus batidos proteicos.",
@@ -778,6 +775,7 @@ function closeLocationAlert() {
     // Abrir el selector de ubicación
     document.getElementById("locationDropdown").classList.add("active");
 }
+
 
 
 
