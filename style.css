@@ -1138,53 +1138,60 @@ nav {
 }
 
 /* SELECTOR DE CANTIDAD EN MODAL */
+/* === SELECTOR DE CANTIDAD EN LÍNEA CORREGIDO === */
+
 .quantity-selector {
-    margin: 20px 0;
+    margin: 15px 0;
+    display: flex;               /* 👈 ALINEA TODO EN UNA LÍNEA */
+    align-items: center;
+    gap: 12px;
 }
 
+/* Texto "Cantidad" EN LA MISMA LÍNEA */
 .quantity-selector label {
-    display: block;
+    display: inline-block;       /* 👈 YA NO OCUPA UNA LÍNEA ENTERA */
     font-weight: 600;
-    margin-bottom: 10px;
-    color: #2c2c2c;
     font-size: 14px;
+    color: #2c2c2c;
+    margin: 0;                   /* 👈 SACAMOS EL MARGIN DE ABAJO */
 }
 
+/* Controles */
 .quantity-controls {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    background: #f8f6f0;
-    padding: 15px;
-    border-radius: 8px;
+    gap: 10px;
+    background: none !important;
+    padding: 0 !important;
 }
 
+/* BOTONES MINI */
 .qty-btn-modal {
     background: #4a1620;
     color: white;
     border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 600;
-    transition: all 0.3s;
+    transition: 0.2s ease;
 }
 
 .qty-btn-modal:hover {
     background: #6d1f2a;
-    transform: scale(1.05);
 }
 
+/* Número */
 .quantity-display {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 700;
-    color: #2c2c2c;
-    min-width: 40px;
+    min-width: 22px;
     text-align: center;
+    color: #2c2c2c;
 }
+
 
 /* POPUP AÑADIDO AL CARRITO */
 .added-to-cart-popup {
@@ -1328,6 +1335,7 @@ nav {
         font-size: 20px;
     }
 }
+
 
 
 
