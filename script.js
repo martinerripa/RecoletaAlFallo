@@ -278,7 +278,7 @@ const products = [
     },
     
     {
-        categoria: "Creatina y Fuerza",
+        categoria: "Creatina",
         nombre: "Creatina + Electrolitos",
         precio: 24900,
         sabores: ["Pink Lemonade", "Blue Lemonade"],
@@ -770,6 +770,7 @@ document.head.appendChild(style);
 // ========================================
 renderProducts();
 updateCart();
+
 
 
 
