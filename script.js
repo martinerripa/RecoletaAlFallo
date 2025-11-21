@@ -18,7 +18,7 @@ const products = [
     {
         categoria: "Magnesio",
         nombre: "Citrato de Magnesio Sin Sabor - Polvo 500 Gr",
-        precio: 23900,
+        precio: 25900,
         descripcionPrincipal: "El Citrato de Magnesio ayuda a tener un descanso reparador y reducir la fatiga, relaja los músculos para su mejor recuperación y tiene un efecto regulador de la función intestinal.",
         modoUso: "Consumir 1 porción diaria (3.5 gramos) o como lo indique su médico.",
         ingredientes: "Citrato de Magnesio.",
@@ -205,7 +205,7 @@ const products = [
     {
         categoria: "Colageno",
         nombre: "COLLAGEN 210 Gr",
-        precio: 17000,
+        precio: 18900,
         sabores: ["Frutos Rojos 🍓🫐", "Limón 🍋"],
         modoUso: "Diluir 2 medidas (10,5g) en 300ml de agua, con el estómago vacío.",
         ingredientes: "Colágeno Hidrolizado, Resveratrol, ARO: Sabor Limón, EDU: Potasio Acesulfamo (30mg/100cm3), EDU: Sucralosa (15mg/100cm3), Vitamina C (Ácido Ascórbico), Ácido Hialurónico, Coenzima Q10.",
@@ -770,6 +770,7 @@ document.head.appendChild(style);
 // ========================================
 renderProducts();
 updateCart();
+
 
 
 
