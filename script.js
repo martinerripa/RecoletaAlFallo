@@ -30,7 +30,7 @@ const products = [
     {
         categoria: "Pancakes",
         nombre: "Pancakes Proteicos sabor Chocolate",
-        precio: 12000,
+        precio: 12900,
         descripcionPrincipal: "¿QUÉ SON LOS PANCAKES PROTEICOS? Son pancakes estilo americano que hacen de tus desayunos y meriendas algo totalmente irresistible. Una opción deliciosa, nutritiva y libre de gluten, pensada para acompañar un estilo de vida saludable y activo.",
         modoUso: "¿CÓMO SE PREPARAN? Colocar dos cucharadas soperas del producto (25 g) y 30 ml de agua o leche en un recipiente. Mezclar con tenedor. Cocinar en sartén precalentada y rociada con aceite a fuego medio aproximadamente 1,5 minutos por lado. TIP: Probálos calientes y fríos. Combinálos con pasta de maní, miel, frutos secos o con tus frutas preferidas.",
         ingredientes: "Harina de avena libre de gluten, clara de huevo, leche descremada, polvo para hornear, cacao puro.",
@@ -89,7 +89,7 @@ const products = [
     {
         categoria: "Pancakes",
         nombre: "Pancakes Proteicos sabor vainilla",
-        precio: 12000,
+        precio: 12900,
         descripcionPrincipal: "¿QUÉ SON LOS PANCAKES PROTEICOS? Son pancakes estilo americano que hacen de tus desayunos y meriendas algo totalmente irresistible. Una opción deliciosa, nutritiva y LIBRE DE GLUTEN, pensada para acompañar un estilo de vida saludable y activo",
         modoUso: "¿CÓMO SE PREPARAN? Colocar dos cucharadas soperas del producto (25 g) y 30 ml de agua o leche en un recipiente. Mezclar con tenedor. Cocinar a sartén precalentada y rociada con aceite a fuego medio aproximadamente 1,5 minutos por lado",
         ingredientes: "Harina de avena Libre de gluten, clara de huevo, leche descremada, polvo para hornear, ARO: vainilla, EDU: INS 955.",
@@ -113,7 +113,7 @@ const products = [
     {
         categoria: "Preentreno",
         nombre: "TNT-Dynamite 240g",
-        precio: 19600,
+        precio: 21830,
         sabores: ["Grape 🍇", "Açaí"],
         descripcionPrincipal: "",
         modoUso: "Diluir 1 medida colmada (8g) en 500cm3 de agua fría una vez al día. Consumir 15 a 30 minutos antes del entrenamiento o la competencia. No consumir más de 2 porciones diarias.",
@@ -172,7 +172,7 @@ const products = [
     {
         categoria: "Preentreno",
         nombre: "PUMP V8 - 285 Gr",
-        precio: 26340,
+        precio: 28900,
         sabores: ["Sandía 🍉", "Uva 🍇"], 
         descripcionPrincipal: "Pre-entrenamiento de última generación con 8 ingredientes activos diseñados para maximizar tu rendimiento.\n\nFórmula avanzada con beta alanina, citrulina, cafeína y complejo vitamínico para energía explosiva y mejor concentración.",
         modoUso: "Disolver 1 medida (9,5g) en 500cm3 de agua fría. Consumir 15 a 30 minutos antes del entrenamiento o la competencia. No consumir más de 2 porciones diarias.",
@@ -216,7 +216,7 @@ const products = [
     {
         categoria: "Quemador",
         nombre: "Thermo Fuel Max - 120 Cápsulas",
-        precio: 18900,
+        precio: 19900,
         modoUso: "Tomar 2 cápsulas por la mañana y 2 cápsulas 15 minutos antes del entrenamiento o como lo indique su médico.",
         ingredientes: "Extracto Natural de Canephora Robusta (Green Coffee), Ext. Nat. de Papa (Solanum Tuberosum), Ext. Nat. de Naranja Amarga, Ext. Nat. de Té Verde, Ext. Natural de Guaraná, Ext. Natural de Uva Ursi, Vitamina B6, Riboflavina (Vitamina B2), Tiamina (Vitamina B1), Picolinato de Cromo y Vitamina B12. Información adicional: Fenilcetonúricos, contiene fenilalanina.",
         advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo, lactancia ni en niños. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en lugar fresco y seco, fuera del alcance de los niños. No exponer a temperaturas mayores a 25°C. Diabéticos: este producto contiene cromo, consulte a su médico.",
@@ -257,7 +257,7 @@ const products = [
     {
         categoria: "ZMA",
         nombre: "STAR - ZMA - 90 Cápsulas",
-        precio: 16000,
+        precio: 16900,
         descripcionPrincipal: "REAL ZMA contiene la combinación adecuada de los tres elementos claves: Magnesio (como aspartato), Zinc (como monometionina y aspartato) y Vitamina B6. NATURAL | NON-HORMONAL FORMULA Tested for Purity and Potency",
         modoUso: "MUJERES: Tomar 2 cápsulas HOMBRES: Tomar 3 cápsulas. Antes de acostarse, preferentemente con el estómago vacío o como lo indique su especialista.",
         ingredientes: "Magnesio Aspartato, Zinc Monometionina Aspartato, Vitamina B6 (Piridoxina HCI), Dióxido de Silicio, Magnesio Estearato.",
@@ -280,7 +280,7 @@ const products = [
     {
         categoria: "Creatina",
         nombre: "Creatina + Electrolitos",
-        precio: 24900,
+        precio: 25900,
         sabores: ["Pink Lemonade", "Blue Lemonade"],
         descripcionPrincipal: "Aumenta la fuerza y potencia muscular. Mejora la recuperación. Optimiza la hidratación al reponer sales minerales. Creatina + Electrolitos es una combinación que aporta los beneficios de la creatina y optimiza la hidratación al reponer sales minerales. Su fórmula potencia el entrenamiento y brinda soporte energético sostenido. Aporta 5 g de creatina monohidrato micronizada por porción junto con un blend balanceado de electrolitos (sodio, potasio, magnesio y cloruros), ayudando a sostener la función muscular y evitar calambres, fatiga y falta de sales.",
         modoUso: "Diluir un scoop en 200 ml de agua.",
@@ -770,6 +770,7 @@ document.head.appendChild(style);
 // ========================================
 renderProducts();
 updateCart();
+
 
 
 
