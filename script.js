@@ -75,6 +75,18 @@ const products = [
         imagen: "img/creatina1kg.png"
     },
     
+     {
+        categoria: "Creatina",
+        nombre: "Creatina Monohidrato",
+        precio: 24900,
+        descripcionPrincipal: "La creatina micronizada es la unión de tres aminoácidos que ofrece mayores ventajas que la creatina normal, mejorando su asimilación. La creatina monohidrato es recomendada durante un plan de entrenamiento para aumentar la fuerza, resistencia y recuperación.",
+        modoUso: "Disolver la creatina en 200 ml de agua o jugo y recomendamos tomarla antes de entrenar para optimizar la energía y el rendimiento muscular, Para sabor neutro, usar 5 g (1 cucharadita colmada de té). Para el sabor Fruit Punch, disolver 6,5 g (1 scoop sin colmar). Para el sabor Naranja, disolver 5,57 g (1 scoop al ras).Su fórmula pura y de rápida absorción ayuda a aumentar la fuerza, retrasar la fatiga y mejorar la recuperación después del ejercicio.",
+        ingredientes: "Creatina monohidrato micronizada de máxima pureza - 100% Pura.",
+        advertencias: "Suplementa dietas insuficientes, consulte a su médico y/o farmacéutico. No consumir en caso de embarazo o lactancia. Menores de 18 años consumir bajo supervisión de un adulto o profesional. Mantener en lugar seco y fresco.",
+        descripcionSecundaria: "CREATINE MONOHYDRATE MICRONIZADA | 100% PURA | AUMENTA EL VOLUMEN Y LA RESISTENCIA .",
+        imagen: "img/creatina_nueva.webp"
+    },
+    
     {
         categoria: "Creatina",
         nombre: "Creatina Monohidrato 300g Doypack",
@@ -770,6 +782,7 @@ document.head.appendChild(style);
 // ========================================
 renderProducts();
 updateCart();
+
 
 
 
