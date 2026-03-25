@@ -72,8 +72,6 @@ export async function addOrder(order: Omit<Order, "id" | "createdAt">): Promise<
     notas: order.notes || "",
   }
 
-  console.log("[v0] Inserting order with data:", JSON.stringify(rowData, null, 2))
-
   const { data, error } = await supabase
     .from("orders")
     .insert(rowData)
@@ -81,14 +79,12 @@ export async function addOrder(order: Omit<Order, "id" | "createdAt">): Promise<
     .single()
 
   if (error) {
-    console.error("[v0] Supabase insert error:", error.message, error.details, error.hint)
+    console.error("Error adding order:", error.message, error.details, error.hint)
     return { 
       order: null, 
       error: `Error al crear pedido: ${error.message}${error.details ? ` - ${error.details}` : ""}${error.hint ? ` (${error.hint})` : ""}` 
     }
   }
-
-  console.log("[v0] Order created successfully:", data)
   return { order: rowToOrder(data as OrderRow), error: null }
 }
 
