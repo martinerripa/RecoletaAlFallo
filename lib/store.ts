@@ -54,22 +54,25 @@ export async function fetchOrders(): Promise<Order[]> {
   return (data as OrderRow[]).map(rowToOrder)
 }
 
-export async function addOrder(order: Omit<Order, "id" | "createdAt">): Promise<Order | null> {
+export async function addOrder(order: Omit<Order, "id" | "createdAt">): Promise<{ order: Order | null; error: string | null }> {
   const supabase = createClient()
   
+  // Build row data with exact Spanish column names
   const rowData = {
-    nombre: order.customerName,
-    pedido: order.orderDetails,
-    total: order.totalPrice,
-    pagado: order.paymentStatus !== "not_paid",
-    entregado: order.deliveryStatus === "delivered",
-    tipo: order.deliveryType,
-    direccion: order.address,
-    maps_url: order.mapsLink,
-    horario: order.schedule,
-    asignado: order.assignedPerson,
-    notas: order.notes,
+    nombre: order.customerName || "",
+    pedido: order.orderDetails || "",
+    total: typeof order.totalPrice === "number" ? order.totalPrice : 0,
+    pagado: order.paymentStatus !== "not_paid", // boolean
+    entregado: order.deliveryStatus === "delivered", // boolean
+    tipo: order.deliveryType || "pickup_aguero",
+    direccion: order.address || "",
+    maps_url: order.mapsLink || "",
+    horario: order.schedule || "",
+    asignado: order.assignedPerson || "Martin",
+    notas: order.notes || "",
   }
+
+  console.log("[v0] Inserting order with data:", JSON.stringify(rowData, null, 2))
 
   const { data, error } = await supabase
     .from("orders")
@@ -78,11 +81,15 @@ export async function addOrder(order: Omit<Order, "id" | "createdAt">): Promise<
     .single()
 
   if (error) {
-    console.error("Error adding order:", error)
-    return null
+    console.error("[v0] Supabase insert error:", error.message, error.details, error.hint)
+    return { 
+      order: null, 
+      error: `Error al crear pedido: ${error.message}${error.details ? ` - ${error.details}` : ""}${error.hint ? ` (${error.hint})` : ""}` 
+    }
   }
 
-  return rowToOrder(data as OrderRow)
+  console.log("[v0] Order created successfully:", data)
+  return { order: rowToOrder(data as OrderRow), error: null }
 }
 
 export async function updateOrder(id: string, updates: Partial<Order>): Promise<Order | null> {

@@ -49,13 +49,13 @@ export function OrdersDashboard() {
   const filteredOrders = searchOrders(filterOrders(orders, activeFilter), searchQuery)
 
   const handleCreateOrder = async (orderData: Omit<Order, "id" | "createdAt">) => {
-    const newOrder = await addOrder(orderData)
+    const { order: newOrder, error } = await addOrder(orderData)
     if (newOrder) {
       setOrders((prev) => [newOrder, ...prev])
       setIsFormOpen(false)
       toast.success("Pedido creado exitosamente")
     } else {
-      toast.error("Error al crear el pedido")
+      toast.error(error || "Error al crear el pedido")
     }
   }
 
