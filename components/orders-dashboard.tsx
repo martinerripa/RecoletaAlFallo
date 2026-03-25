@@ -1,12 +1,11 @@
 "use client"
 
-import { useState, useEffect, useSyncExternalStore } from "react"
+import { useState, useEffect, useCallback } from "react"
 import { toast } from "sonner"
-import { Plus, Package } from "lucide-react"
+import { Plus, Package, RefreshCw } from "lucide-react"
 import { Order, FilterType } from "@/lib/types"
 import {
-  getOrders,
-  subscribe,
+  fetchOrders,
   addOrder,
   updateOrder,
   filterOrders,
@@ -18,11 +17,23 @@ import { FilterTabs } from "./filter-tabs"
 import { SearchBar } from "./search-bar"
 
 export function OrdersDashboard() {
-  const orders = useSyncExternalStore(subscribe, getOrders, getOrders)
+  const [orders, setOrders] = useState<Order[]>([])
+  const [isLoading, setIsLoading] = useState(true)
   const [activeFilter, setActiveFilter] = useState<FilterType>("active")
   const [searchQuery, setSearchQuery] = useState("")
   const [isFormOpen, setIsFormOpen] = useState(false)
   const [editingOrder, setEditingOrder] = useState<Order | null>(null)
+
+  const loadOrders = useCallback(async () => {
+    setIsLoading(true)
+    const data = await fetchOrders()
+    setOrders(data)
+    setIsLoading(false)
+  }, [])
+
+  useEffect(() => {
+    loadOrders()
+  }, [loadOrders])
 
   // Calculate counts for each filter
   const counts: Record<FilterType, number> = {
@@ -37,28 +48,50 @@ export function OrdersDashboard() {
   // Filter and search orders
   const filteredOrders = searchOrders(filterOrders(orders, activeFilter), searchQuery)
 
-  const handleCreateOrder = (orderData: Omit<Order, "id" | "createdAt">) => {
-    addOrder(orderData)
-    setIsFormOpen(false)
-    toast.success("Pedido creado exitosamente")
-  }
-
-  const handleUpdateOrder = (orderData: Omit<Order, "id" | "createdAt">) => {
-    if (editingOrder) {
-      updateOrder(editingOrder.id, orderData)
-      setEditingOrder(null)
-      toast.success("Pedido actualizado exitosamente")
+  const handleCreateOrder = async (orderData: Omit<Order, "id" | "createdAt">) => {
+    const newOrder = await addOrder(orderData)
+    if (newOrder) {
+      setOrders((prev) => [newOrder, ...prev])
+      setIsFormOpen(false)
+      toast.success("Pedido creado exitosamente")
+    } else {
+      toast.error("Error al crear el pedido")
     }
   }
 
-  const handleMarkPaid = (id: string) => {
-    updateOrder(id, { paymentStatus: "cash" })
-    toast.success("Pedido marcado como pagado")
+  const handleUpdateOrder = async (orderData: Omit<Order, "id" | "createdAt">) => {
+    if (editingOrder) {
+      const updated = await updateOrder(editingOrder.id, orderData)
+      if (updated) {
+        setOrders((prev) =>
+          prev.map((o) => (o.id === editingOrder.id ? updated : o))
+        )
+        setEditingOrder(null)
+        toast.success("Pedido actualizado exitosamente")
+      } else {
+        toast.error("Error al actualizar el pedido")
+      }
+    }
   }
 
-  const handleMarkDelivered = (id: string) => {
-    updateOrder(id, { deliveryStatus: "delivered" })
-    toast.success("Pedido marcado como entregado")
+  const handleMarkPaid = async (id: string) => {
+    const updated = await updateOrder(id, { paymentStatus: "cash" })
+    if (updated) {
+      setOrders((prev) => prev.map((o) => (o.id === id ? updated : o)))
+      toast.success("Pedido marcado como pagado")
+    } else {
+      toast.error("Error al actualizar el pedido")
+    }
+  }
+
+  const handleMarkDelivered = async (id: string) => {
+    const updated = await updateOrder(id, { deliveryStatus: "delivered" })
+    if (updated) {
+      setOrders((prev) => prev.map((o) => (o.id === id ? updated : o)))
+      toast.success("Pedido marcado como entregado")
+    } else {
+      toast.error("Error al actualizar el pedido")
+    }
   }
 
   const handleEdit = (order: Order) => {
@@ -75,13 +108,23 @@ export function OrdersDashboard() {
               <Package className="h-6 w-6 text-primary" />
               <h1 className="text-xl font-bold text-foreground">Pedidos</h1>
             </div>
-            <button
-              onClick={() => setIsFormOpen(true)}
-              className="flex items-center gap-1.5 rounded-lg bg-primary px-3 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-            >
-              <Plus className="h-4 w-4" />
-              Nuevo
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={loadOrders}
+                disabled={isLoading}
+                className="flex items-center gap-1.5 rounded-lg border border-input bg-background px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary disabled:opacity-50"
+                aria-label="Recargar pedidos"
+              >
+                <RefreshCw className={`h-4 w-4 ${isLoading ? "animate-spin" : ""}`} />
+              </button>
+              <button
+                onClick={() => setIsFormOpen(true)}
+                className="flex items-center gap-1.5 rounded-lg bg-primary px-3 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                <Plus className="h-4 w-4" />
+                Nuevo
+              </button>
+            </div>
           </div>
 
           {/* Search */}
@@ -100,7 +143,12 @@ export function OrdersDashboard() {
 
       {/* Orders List */}
       <main className="mx-auto max-w-2xl px-4 py-4">
-        {filteredOrders.length === 0 ? (
+        {isLoading ? (
+          <div className="flex flex-col items-center justify-center py-12 text-center">
+            <RefreshCw className="mb-4 h-8 w-8 animate-spin text-primary" />
+            <p className="text-sm text-muted-foreground">Cargando pedidos...</p>
+          </div>
+        ) : filteredOrders.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-12 text-center">
             <Package className="mb-4 h-12 w-12 text-muted-foreground" />
             <h3 className="text-lg font-medium text-foreground">No hay pedidos</h3>
