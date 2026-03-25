@@ -142,15 +142,6 @@ export function OrderCard({ order, onMarkPaid, onMarkDelivered, onEdit }: OrderC
 
       {/* Actions */}
       <div className="flex gap-2">
-        {!isPaid && (
-          <button
-            onClick={() => onMarkPaid(order.id)}
-            className="flex flex-1 items-center justify-center gap-1.5 rounded-lg bg-green-600 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-green-700"
-          >
-            <CheckCircle2 className="h-4 w-4" />
-            Marcar pagado
-          </button>
-        )}
         {!isDelivered && (
           <button
             onClick={() => onMarkDelivered(order.id)}
@@ -158,6 +149,14 @@ export function OrderCard({ order, onMarkPaid, onMarkDelivered, onEdit }: OrderC
           >
             <Truck className="h-4 w-4" />
             Marcar entregado
+          </button>
+        )}
+        {!isPaid && (
+          <button
+            onClick={() => onMarkPaid(order.id)}
+            className="flex flex-1 items-center justify-center gap-1.5 rounded-lg bg-green-600 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-green-700"
+          >
+            {"💰"} Marcar como pagado
           </button>
         )}
         {isPaid && isDelivered && (
