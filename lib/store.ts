@@ -3,20 +3,20 @@
 import { createClient } from "@/lib/supabase/client"
 import { Order, FilterType, PaymentStatus, DeliveryType, AssignedPerson } from "./types"
 
-// Database row type
+// Database row type matching actual Supabase columns
 interface OrderRow {
   id: string
-  customer_name: string
-  order_details: string
-  total_price: number
-  payment_status: PaymentStatus
-  delivery_status: "delivered" | "not_delivered"
-  assigned_person: AssignedPerson
-  delivery_type: DeliveryType
-  address: string
-  maps_link: string
-  schedule: string
-  notes: string
+  nombre: string
+  pedido: string
+  total: number
+  pagado: boolean
+  entregado: boolean
+  tipo: DeliveryType
+  direccion: string
+  maps_url: string
+  horario: string
+  asignado: AssignedPerson
+  notas: string
   created_at: string
 }
 
@@ -24,35 +24,18 @@ interface OrderRow {
 function rowToOrder(row: OrderRow): Order {
   return {
     id: row.id,
-    customerName: row.customer_name,
-    orderDetails: row.order_details,
-    totalPrice: row.total_price,
-    paymentStatus: row.payment_status,
-    deliveryStatus: row.delivery_status,
-    assignedPerson: row.assigned_person,
-    deliveryType: row.delivery_type,
-    address: row.address || "",
-    mapsLink: row.maps_link || "",
-    schedule: row.schedule || "",
-    notes: row.notes || "",
+    customerName: row.nombre,
+    orderDetails: row.pedido,
+    totalPrice: row.total,
+    paymentStatus: row.pagado ? "cash" : "not_paid", // Convert boolean to PaymentStatus
+    deliveryStatus: row.entregado ? "delivered" : "not_delivered",
+    assignedPerson: row.asignado,
+    deliveryType: row.tipo,
+    address: row.direccion || "",
+    mapsLink: row.maps_url || "",
+    schedule: row.horario || "",
+    notes: row.notas || "",
     createdAt: new Date(row.created_at),
-  }
-}
-
-// Transform Order to database row format (for insert/update)
-function orderToRow(order: Omit<Order, "id" | "createdAt">): Omit<OrderRow, "id" | "created_at"> {
-  return {
-    customer_name: order.customerName,
-    order_details: order.orderDetails,
-    total_price: order.totalPrice,
-    payment_status: order.paymentStatus,
-    delivery_status: order.deliveryStatus,
-    assigned_person: order.assignedPerson,
-    delivery_type: order.deliveryType,
-    address: order.address,
-    maps_link: order.mapsLink,
-    schedule: order.schedule,
-    notes: order.notes,
   }
 }
 
@@ -73,7 +56,20 @@ export async function fetchOrders(): Promise<Order[]> {
 
 export async function addOrder(order: Omit<Order, "id" | "createdAt">): Promise<Order | null> {
   const supabase = createClient()
-  const rowData = orderToRow(order)
+  
+  const rowData = {
+    nombre: order.customerName,
+    pedido: order.orderDetails,
+    total: order.totalPrice,
+    pagado: order.paymentStatus !== "not_paid",
+    entregado: order.deliveryStatus === "delivered",
+    tipo: order.deliveryType,
+    direccion: order.address,
+    maps_url: order.mapsLink,
+    horario: order.schedule,
+    asignado: order.assignedPerson,
+    notas: order.notes,
+  }
 
   const { data, error } = await supabase
     .from("orders")
@@ -92,19 +88,19 @@ export async function addOrder(order: Omit<Order, "id" | "createdAt">): Promise<
 export async function updateOrder(id: string, updates: Partial<Order>): Promise<Order | null> {
   const supabase = createClient()
   
-  // Transform partial Order to partial row format
-  const rowUpdates: Partial<OrderRow> = {}
-  if (updates.customerName !== undefined) rowUpdates.customer_name = updates.customerName
-  if (updates.orderDetails !== undefined) rowUpdates.order_details = updates.orderDetails
-  if (updates.totalPrice !== undefined) rowUpdates.total_price = updates.totalPrice
-  if (updates.paymentStatus !== undefined) rowUpdates.payment_status = updates.paymentStatus
-  if (updates.deliveryStatus !== undefined) rowUpdates.delivery_status = updates.deliveryStatus
-  if (updates.assignedPerson !== undefined) rowUpdates.assigned_person = updates.assignedPerson
-  if (updates.deliveryType !== undefined) rowUpdates.delivery_type = updates.deliveryType
-  if (updates.address !== undefined) rowUpdates.address = updates.address
-  if (updates.mapsLink !== undefined) rowUpdates.maps_link = updates.mapsLink
-  if (updates.schedule !== undefined) rowUpdates.schedule = updates.schedule
-  if (updates.notes !== undefined) rowUpdates.notes = updates.notes
+  // Transform partial Order to partial row format with Spanish column names
+  const rowUpdates: Record<string, unknown> = {}
+  if (updates.customerName !== undefined) rowUpdates.nombre = updates.customerName
+  if (updates.orderDetails !== undefined) rowUpdates.pedido = updates.orderDetails
+  if (updates.totalPrice !== undefined) rowUpdates.total = updates.totalPrice
+  if (updates.paymentStatus !== undefined) rowUpdates.pagado = updates.paymentStatus !== "not_paid"
+  if (updates.deliveryStatus !== undefined) rowUpdates.entregado = updates.deliveryStatus === "delivered"
+  if (updates.assignedPerson !== undefined) rowUpdates.asignado = updates.assignedPerson
+  if (updates.deliveryType !== undefined) rowUpdates.tipo = updates.deliveryType
+  if (updates.address !== undefined) rowUpdates.direccion = updates.address
+  if (updates.mapsLink !== undefined) rowUpdates.maps_url = updates.mapsLink
+  if (updates.schedule !== undefined) rowUpdates.horario = updates.schedule
+  if (updates.notes !== undefined) rowUpdates.notas = updates.notes
 
   const { data, error } = await supabase
     .from("orders")
